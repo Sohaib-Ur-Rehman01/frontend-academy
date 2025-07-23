@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", "Segoe UI", "Helvetica Neue", sans-serif;
+  background-color: black;
+  color: white;
+}
+
+.content {
+  height: 120vh;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  box-sizing: border-box;
+  background-color: rgb(71, 69, 69);
+}
+
+.hero-container {
+  display: flex;
+  flex: 1;
+  gap: 40px;
+}
+
+.text-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.headingContent {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.hero-description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  max-width: 600px;
+}
+
+.button-container {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.videosectionbtn,
+.learningpathbtn {
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: transparent;
+  color: white;
+  border: 2px solid #c53030;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.videosectionbtn:hover,
+.learningpathbtn:hover {
+  background-color: #c53030;
+  transform: scale(1.05);
+}
+.videosectionbtn {
+  background-color: #c53030;
+}
+
+.video-section {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.promo-video {
+  width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.stats-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  padding: 30px;
+  background-color: rgb(71, 69, 69);
+  border-radius: 8px;
+}
+
+.stat-item {
+  text-align: center;
+  padding: 0 20px;
+}
+
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #c53030;
+}
+
+.stat-label {
+  font-size: 1rem;
+  color: #ddd;
+}

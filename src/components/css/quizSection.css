@@ -1,0 +1,43 @@
+.quizSection {
+  max-width: auto; /* Industry-standard readable width */
+  margin: 0 auto; /* Center horizontally */
+  padding: 64px 24px; /* Responsive vertical & horizontal padding */
+  text-align: center;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.836);
+}
+
+.quizHeading {
+  font-size: 2.5rem; /* 40px */
+  line-height: 1.2; /* 48px total line-height (for readability) */
+  font-weight: 700; /* Bold */
+  margin-bottom: 20px; /* Space below heading */
+  color: white; /* Neutral-900 */
+}
+
+.quizDescription {
+  font-size: 1.125rem; /* 18px */
+  line-height: 1.75; /* ~31.5px line-height */
+  color: white; /* Gray-600 */
+  margin-bottom: 32px;
+}
+
+.quizButton {
+  background-color: #be123c; /* Tailwind rose-700 */
+  color: white;
+  padding: 14px 32px;
+  font-size: 1rem; /* 16px */
+  font-weight: 600;
+  border-radius: 9999px; /* Full pill shape */
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.quizButton:hover {
+  background-color: #9f1239; /* Darker on hover */
+}

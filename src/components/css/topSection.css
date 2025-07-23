@@ -1,0 +1,322 @@
+.top-hero-section {
+  position: relative;
+  min-height: 100vh;
+  background: #000;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.top-hero-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 28px 60px 0 60px;
+  font-size: 1.08rem;
+  font-weight: 500;
+  z-index: 2;
+}
+
+.top-hero-logo {
+  font-size: 2.1rem;
+  font-weight: 400;
+  color: #fff;
+  letter-spacing: 1px;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.top-hero-logo-red {
+  color: #e53935;
+  font-family: "Brush Script MT", cursive, sans-serif;
+  font-size: 2.1rem;
+  font-weight: bold;
+  margin-left: 4px;
+}
+
+.top-hero-nav-links {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+}
+
+.top-hero-nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  position: relative;
+  transition: color 0.2s;
+}
+
+.top-hero-nav-links a:hover {
+  color: #e53935;
+}
+
+.top-hero-new {
+  background: #00e676;
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: bold;
+  border-radius: 6px;
+  padding: 2px 8px;
+  margin-left: 4px;
+  vertical-align: middle;
+}
+
+.top-hero-nav-actions {
+  display: flex;
+  gap: 16px;
+}
+
+.top-hero-join-btn {
+  background: #e53935;
+  color: #fff;
+  border-radius: 24px;
+  padding: 10px 28px;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1.08rem;
+  transition: background 0.2s;
+}
+
+.top-hero-join-btn:hover {
+  background: #b71c1c;
+}
+
+.top-hero-login-btn {
+  background: none;
+  color: #fff;
+  border-radius: 24px;
+  padding: 10px 28px;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1.08rem;
+  border: 2px solid #fff;
+  transition: background 0.2s, color 0.2s;
+}
+
+.top-hero-login-btn:hover {
+  background: #fff;
+  color: #e53935;
+}
+
+.top-hero-content {
+  margin-top: 120px;
+  text-align: left;
+  max-width: 700px;
+  margin-left: 12vw;
+  z-index: 2;
+  position: relative;
+}
+
+.top-hero-subtitle {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  margin-bottom: 18px;
+}
+
+.top-hero-title {
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: #fff;
+  line-height: 1.15;
+  margin-bottom: 32px;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.top-hero-btns {
+  display: flex;
+  gap: 18px;
+  margin-bottom: 38px;
+}
+
+.top-hero-trial-btn {
+  background: #e53935;
+  color: #fff;
+  border-radius: 24px;
+  padding: 14px 38px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  border: none;
+  transition: background 0.2s;
+}
+
+.top-hero-trial-btn:hover {
+  background: #b71c1c;
+}
+
+.top-hero-browse-btn {
+  background: none;
+  color: #fff;
+  border-radius: 24px;
+  padding: 14px 38px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  border: 2px solid #fff;
+  transition: background 0.2s, color 0.2s;
+}
+
+.top-hero-browse-btn:hover {
+  background: #fff;
+  color: #e53935;
+}
+
+.top-hero-quote-box {
+  background: rgba(24, 24, 24, 0.85);
+  /* border-radius: 8px; */
+  padding: 28px 32px 18px 32px;
+  margin-top: 32px;
+  margin-left: 60vw;
+  max-width: 600px;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.18);
+  position: relative;
+}
+
+.top-hero-quote-box p {
+  color: #fff;
+  font-size: 1.08rem;
+  margin-bottom: 18px;
+  font-style: italic;
+}
+
+.top-hero-quote-author {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.08rem;
+  font-weight: 600;
+}
+
+.top-hero-quote-name {
+  color: #fff;
+  font-weight: bold;
+}
+
+.top-hero-quote-company {
+  color: #cfcfcf;
+  font-size: 1rem;
+}
+
+.top-hero-quote-icon {
+  color: #e53935;
+  font-size: 2rem;
+  margin-left: auto;
+}
+
+.top-hero-live-banner {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  background: rgba(24, 24, 24, 0.85);
+  color: #fff;
+  font-size: 1.08rem;
+  padding: 12px 0;
+  width: 40vw;
+  min-width: 340px;
+  text-align: center;
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.18);
+  z-index: 3;
+}
+
+.top-hero-live-red {
+  color: #e53935;
+  font-weight: bold;
+}
+
+@media (max-width: 900px) {
+  .top-hero-navbar {
+    flex-direction: column;
+    gap: 18px;
+    padding: 18px 12px 0 12px;
+  }
+  .top-hero-content {
+    margin-left: 0;
+    max-width: 98vw;
+    margin-top: 80px;
+    text-align: center;
+  }
+  .top-hero-live-banner {
+    width: 90vw;
+    min-width: unset;
+    font-size: 1rem;
+  }
+}
+/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\Features dropdown CSS\\ */
+
+/* Add these styles to your existing CSS */
+
+/* Features dropdown container */
+.top-hero-nav-links {
+  position: relative;
+}
+
+/* Features link with dropdown indicator */
+.top-hero-nav-links a[href="#"]:first-child {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.top-hero-nav-links a[href="#"]:first-child::after {
+  content: "▾";
+  font-size: 0.8em;
+  margin-left: 4px;
+  transition: transform 0.2s;
+}
+
+/* Dropdown menu */
+.features-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 240px;
+  background: rgba(244, 219, 219, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 8px;
+  padding: 12px 0;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+  z-index: 100;
+}
+
+/* Dropdown menu items */
+.features-dropdown a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 24px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.features-dropdown a:hover {
+  background: rgba(229, 57, 53, 0.2);
+  color: #e53935;
+  padding-left: 28px;
+}
+
+/* Show dropdown on hover */
+.top-hero-nav-links > div:hover .features-dropdown,
+.top-hero-nav-links > div:focus-within .features-dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.top-hero-nav-links a[href="#"]:first-child:hover::after {
+  transform: rotate(180deg);
+}

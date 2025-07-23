@@ -1,0 +1,108 @@
+h1 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.subheading {
+  font-size: 18px;
+  color: white;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+.tech-icons {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.icon-circle {
+  width: 80px;
+  height: 80px;
+  /* border-radius: 50%; */
+  background-color: #f7fafc;
+  border: 1px solid #e2e8f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  color: #2d3748;
+  font-size: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.icon-circle:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.learning-paths {
+  font-size: 18px;
+  color: #afb0b3;
+  margin-top: 20px;
+}
+
+.path {
+  color: #e63946;
+  font-weight: 600;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 32px;
+  }
+
+  .subheading {
+    font-size: 18px;
+  }
+
+  .icon-circle {
+    width: 70px;
+    height: 70px;
+    font-size: 14px;
+  }
+
+  .learning-paths {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 28px;
+  }
+
+  .subheading {
+    font-size: 16px;
+  }
+
+  .icon-circle {
+    width: 60px;
+    height: 60px;
+    font-size: 12px;
+  }
+
+  .tech-icons {
+    gap: 12px;
+  }
+}
+.devsetup {
+  color: #e63946;
+  font-weight: bold;
+  font-size: 16px;
+}
+/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ tech section portion deepseek */
+.tech-section {
+  background-color: rgb(37, 35, 35);
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+  height: 68vh;
+}

@@ -1,0 +1,148 @@
+.footer-section {
+  background: #111;
+  color: #fff;
+  padding: 32px 0 0 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.footer-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 32px;
+  flex-wrap: wrap;
+}
+
+.footer-brand {
+  flex: 1 1 400px;
+  min-width: 320px;
+}
+
+.footer-logo {
+  font-size: 2.2rem;
+  font-weight: 400;
+  color: #fff;
+  letter-spacing: 1px;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.footer-logo-red {
+  color: #e53935;
+  font-family: "Brush Script MT", cursive, sans-serif;
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-left: 4px;
+}
+
+.footer-nav {
+  margin: 18px 0 12px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+.footer-nav a {
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1.08rem;
+  transition: color 0.2s;
+}
+
+.footer-nav a:hover {
+  color: #e53935;
+}
+
+.footer-made {
+  color: #6fc3ff;
+  font-size: 1rem;
+  margin-top: 18px;
+}
+
+.footer-social-apps {
+  flex: 1 1 340px;
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 18px;
+}
+
+.footer-social {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 12px;
+}
+
+.footer-icon {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background: none;
+  transition: transform 0.2s;
+}
+
+.footer-icon:hover {
+  transform: scale(1.12);
+}
+
+.footer-apps {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.footer-app-btn img {
+  height: 40px;
+  border-radius: 8px;
+  background: #fff;
+  padding: 2px 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+.footer-contact {
+  color: #fff;
+  font-size: 1.08rem;
+  margin-top: 8px;
+}
+
+.footer-contact a {
+  color: #6fc3ff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.footer-divider {
+  border: none;
+  border-top: 1px solid #222;
+  margin: 24px 0 0 0;
+}
+
+.footer-bottom {
+  text-align: center;
+  color: #ccc;
+  font-size: 1rem;
+  padding: 18px 0 12px 0;
+}
+
+.footer-bottom a {
+  color: #fff;
+  text-decoration: underline;
+  margin: 0 6px;
+  font-weight: 500;
+}
+
+@media (max-width: 900px) {
+  .footer-main {
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    padding: 0 12px;
+  }
+  .footer-social-apps {
+    align-items: center;
+  }
+}
