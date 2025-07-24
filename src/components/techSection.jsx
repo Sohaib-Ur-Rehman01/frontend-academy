@@ -3,7 +3,7 @@ import reactLogo from "../assets/reactlogo.svg";
 import jsLogo from "../assets/JSlogo.svg";
 import nodejsLogo from "../assets/nodejslogo.svg";
 import nextJsLogo from "../assets/Nextjslogo.svg";
-import goLogo from "../assets/Gologo.svg";
+import goLogo from "../assets/gologo.svg";
 import tsLogo from "../assets/tsLogo.svg";
 import databaseLogo from "../assets/database.svg";
 
