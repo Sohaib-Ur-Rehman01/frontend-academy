@@ -54,7 +54,7 @@ export const TechSection = () => {
             <img src={tsLogo} className="tech-icon" alt="" />
           </div>
           <div className="icon-circle">
-            <img src={databaseLogo} className="tech-icon" alt="" />
+            <img src={databaseLogo} className="tech-icon" alt="databaselogo" />
           </div>
         </div>
 
