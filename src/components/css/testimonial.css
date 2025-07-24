@@ -35,18 +35,9 @@
 .testimonial-card blockquote {
   font-size: 1rem;
   margin-bottom: 18px;
-  font-style: italic;
   line-height: 1.5;
   position: relative;
-}
-
-.testimonial-card blockquote:before {
-  content: "❝";
-  color: #ff6a00;
-  font-size: 2rem;
-  position: absolute;
-  left: -28px;
-  top: -10px;
+  text-align: left;
 }
 
 .testimonial-user {
@@ -57,32 +48,57 @@
 }
 
 .testimonial-user img {
-  width: 40px;
-  height: 40px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
   object-fit: cover;
-  border: 2px solid #fff;
+  /* border: 2px solid #fff; */
 }
 
 .testimonial-user span {
-  font-weight: bold;
+  font-weight: 700;
   color: #fff;
-  font-size: 1rem;
+  font-size: 18px;
 }
-
+.testimonial-user p {
+  /* font-weight: 700; */
+  color: #fff;
+  /* font-size: 18px; */
+}
 .show-more-btn {
-  margin-top: 24px;
-  padding: 10px 28px;
-  border-radius: 24px;
-  border: 2px solid #fff;
-  background: transparent;
-  color: #fff;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background 0.2s, color 0.2s;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
 }
 
-.show-more-btn:hover {
-  background: #fff;
-  color: #0a3570;
+.show-more-btn button {
+  background-color: transparent;
+  color: white;
+  border: 1px solid #fff;
+  border-radius: 50px;
+  padding: 14px 28px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+  font-size: 18px;
+}
+
+.show-more-btn button svg {
+  color: white;
+  transition: transform 0.3s ease;
+}
+
+.show-more-btn button:hover {
+  background-color: white;
+  color: black;
+  transform: scale(1.05);
+}
+
+.show-more-btn button:hover svg {
+  color: black;
 }

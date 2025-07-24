@@ -1,21 +1,22 @@
 .expert-section {
   background: linear-gradient(135deg, #232323 0%, #181818 100%);
+  background-color: #212121;
   padding: 60px 0 40px 0;
   text-align: center;
 }
 
 .expert-heading {
   color: #fff;
-  font-size: 2.7rem;
-  font-weight: bold;
+  font-size: 36px;
+  font-weight: 700;
   margin-bottom: 18px;
   letter-spacing: -1px;
 }
 
 .expert-subheading {
   color: #fff;
-  font-size: 1.5rem;
-  font-weight: 600;
+  font-size: 24px;
+  font-weight: 700;
   margin-bottom: 38px;
 }
 
@@ -45,11 +46,12 @@
 
 .expert-btn {
   background: #e53935;
+  background-color: #bf2d28;
   color: #fff;
   border: none;
   border-radius: 24px;
-  padding: 14px 38px;
-  font-size: 1.1rem;
+  padding: 12px 24px;
+  font-size: 14px;
   font-weight: 600;
   cursor: pointer;
   margin-top: 12px;

@@ -53,10 +53,10 @@ body {
   font-weight: bold;
   background-color: transparent;
   color: white;
-  border: 2px solid #c53030;
   border-radius: 30px;
   cursor: pointer;
   transition: all 0.3s;
+  background-color: #c95018;
 }
 
 .videosectionbtn:hover,
@@ -65,7 +65,7 @@ body {
   transform: scale(1.05);
 }
 .videosectionbtn {
-  background-color: #c53030;
+  background-color: #c42f2f;
 }
 
 .video-section {
@@ -97,10 +97,16 @@ body {
 }
 
 .stat-number {
-  font-size: 2.5rem;
-  font-weight: bold;
+  font-size: 56px;
+  font-weight: 700;
   margin-bottom: 5px;
-  color: #c53030;
+  background: linear-gradient(90deg, #d9452b, #ef4d2dce);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .stat-label {

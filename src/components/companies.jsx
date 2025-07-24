@@ -1,4 +1,8 @@
 import "./css/companies.css";
+import micorsoft from "../assets/microsoft.svg";
+import netflix from "../assets/netflix.svg";
+import strip from "../assets/stripe.svg";
+import spotify from "../assets/spotify.svg";
 export const CompaniesSection = () => {
   return (
     <>
@@ -13,59 +17,19 @@ export const CompaniesSection = () => {
         <div className="expert-logos">
           <div className="expert-logo">
             {/* Microsoft SVG */}
-            <svg width="48" height="48" viewBox="0 0 48 48">
-              <rect x="2" y="2" width="20" height="20" fill="#888" />
-              <rect x="26" y="2" width="20" height="20" fill="#888" />
-              <rect x="2" y="26" width="20" height="20" fill="#888" />
-              <rect x="26" y="26" width="20" height="20" fill="#888" />
-            </svg>
-            <span>Microsoft</span>
+            <img src={micorsoft} alt="" />
           </div>
           <div className="expert-logo">
             {/* Netflix SVG */}
-            <svg width="90" height="48" viewBox="0 0 90 48">
-              <text
-                x="0"
-                y="38"
-                fontFamily="monospace"
-                fontWeight="bold"
-                fontSize="40"
-                fill="#888"
-              >
-                NETFLIX
-              </text>
-            </svg>
+            <img src={netflix} alt="" />
           </div>
           <div className="expert-logo">
             {/* Stripe SVG */}
-            <svg width="80" height="48" viewBox="0 0 80 48">
-              <text
-                x="0"
-                y="38"
-                fontFamily="sans-serif"
-                fontWeight="bold"
-                fontSize="40"
-                fill="#888"
-              >
-                stripe
-              </text>
-            </svg>
+            <img src={strip} alt="" />
           </div>
           <div className="expert-logo">
             {/* Spotify SVG */}
-            <svg width="48" height="48" viewBox="0 0 48 48">
-              <circle cx="24" cy="24" r="20" fill="#888" />
-              <text
-                x="50"
-                y="38"
-                fontFamily="sans-serif"
-                fontWeight="bold"
-                fontSize="32"
-                fill="#888"
-                style={{ letterSpacing: "-2px" }}
-              ></text>
-            </svg>
-            <span>Spotify</span>
+            <img src={spotify} alt="" />
           </div>
         </div>
         <button className="expert-btn">Get Full Access</button>

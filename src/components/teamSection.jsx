@@ -1,13 +1,15 @@
 import "./css/teamSection.css";
+import quote from "../assets/quote.svg";
+
 export const TeamSection = () => {
   return (
     <>
       <div className="team-section">
-        <h1 className="team-heading">Upskill Your Software Development Team</h1>
-        <h2 className="team-subheading">
+        <h2 className="team-heading">Upskill Your Software Development Team</h2>
+        <h3 className="team-subheading">
           Learn together and apply consistent standards and best practices
           across projects.
-        </h2>
+        </h3>
         <p className="team-note">
           Save 37% over individual plans with 10 team members or more!
         </p>
@@ -15,8 +17,9 @@ export const TeamSection = () => {
 
         <div className="team-testimonials-wall">
           <div className="team-testimonial-card">
+            <img src={quote} alt="" />
             <blockquote>
-              <span className="team-quote-icon">❝</span>
+              <span className="team-quote-icon"></span>
               When, without any prompting; your manager offers you a Frontend
               Masters subscription you know you picked a good place to work
               <br />
@@ -34,8 +37,10 @@ export const TeamSection = () => {
             </div>
           </div>
           <div className="team-testimonial-card">
+            <img src={quote} alt="" />
+
             <blockquote>
-              <span className="team-quote-icon">❝</span>
+              <span className="team-quote-icon"></span>
               Frontend Masters I've had a license for at least 4 years now. Got
               one for all my team when I was a team lead. The content is first
               class and the price is very cheap especially considering what you
@@ -53,8 +58,10 @@ export const TeamSection = () => {
             </div>
           </div>
           <div className="team-testimonial-card">
+            <img src={quote} alt="" />
+
             <blockquote>
-              <span className="team-quote-icon">❝</span>
+              <span className="team-quote-icon"></span>
               Our team got a Frontend Masters subscription and it has been super
               helpful, especially for the new devs on our team who aren't as
               familiar with frontend technologies. I highly recommend giving

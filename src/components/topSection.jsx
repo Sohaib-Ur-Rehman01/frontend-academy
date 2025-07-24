@@ -1,5 +1,7 @@
 import React, { useMemo } from "react";
 import "./css/topSection.css";
+import { CiSearch } from "react-icons/ci";
+import quote from "../assets/quote.svg";
 
 // Array of background images (add your own image URLs)
 const bgImages = [
@@ -45,8 +47,9 @@ export const TopSection = () => {
           <a href="#">Pricing</a>
         </div>
         <div className="top-hero-nav-actions">
-          <a href="#" className="top-hero-login-btn">
-            🔍
+          <a href="#" className="search">
+            <span className="search"></span>
+            <CiSearch />
           </a>
           <a href="#" className="top-hero-join-btn">
             Join Now
@@ -56,33 +59,37 @@ export const TopSection = () => {
           </a>
         </div>
       </nav>
-      <div className="top-hero-content">
-        <h3 className="top-hero-subtitle">
-          In-Depth Frontend &amp; Fullstack Courses
-        </h3>
-        <h1 className="top-hero-title">
-          Your Path to Senior
-          <br />
-          Developer and Beyond
-        </h1>
-        <div className="top-hero-btns">
-          <a href="#" className="top-hero-trial-btn">
-            Start a Free 5-day Trial
-          </a>
-          <a href="#" className="top-hero-browse-btn">
-            Browse Our Courses
-          </a>
+      <div className="hero-wrapper">
+        <div className="top-hero-content">
+          <h3 className="top-hero-subtitle">
+            In-Depth Frontend &amp; Fullstack Courses
+          </h3>
+          <h1 className="top-hero-title">
+            Your Path to Senior
+            <br />
+            Developer and Beyond
+          </h1>
+          <div className="top-hero-btns">
+            <a href="#" className="top-hero-trial-btn">
+              Start a Free 5-day Trial
+            </a>
+            <a href="#" className="top-hero-browse-btn">
+              Browse Our Courses
+            </a>
+          </div>
         </div>
       </div>
       <div className="top-hero-quote-box">
-        <p>
+        <div className="top-hero-quote-icon">
+          <img src={quote} alt="" />
+        </div>
+        <div className="para">
           Teaching forces you to know something in every excruciating detail.
           That's knowledge I get to keep forever and has paid off in my career.
-        </p>
-        <div className="top-hero-quote-author">
-          <span className="top-hero-quote-name">Steve Kinney</span>
-          <span className="top-hero-quote-company">Temporal</span>
-          <span className="top-hero-quote-icon">❞</span>
+          <div className="top-hero-quote-author">
+            <span className="top-hero-quote-name">Steve Kinney</span>
+            <span className="top-hero-quote-company">Temporal</span>
+          </div>
         </div>
       </div>
     </header>
