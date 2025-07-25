@@ -3,7 +3,7 @@ import reactLogo from "../assets/reactlogo.svg";
 import jsLogo from "../assets/JSlogo.svg";
 import nodejsLogo from "../assets/nodejslogo.svg";
 import nextJsLogo from "../assets/Nextjslogo.svg";
-import goLogo from "../assets/gologo.svg";
+import gologo from "../assets/gologo.svg";
 import tsLogo from "../assets/tsLogo.svg";
 import databaseLogo from "../assets/database.svg";
 
@@ -47,7 +47,7 @@ export const TechSection = () => {
           </div>
 
           <div className="icon-circle">
-            <img src={goLogo} className="tech-icon" alt="" />
+            <img src={gologo} className="tech-icon" alt="" />
           </div>
 
           <div className="icon-circle">
