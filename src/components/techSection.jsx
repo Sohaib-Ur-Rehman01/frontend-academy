@@ -3,8 +3,8 @@ import reactLogo from "../assets/reactlogo.svg";
 import jsLogo from "../assets/JSlogo.svg";
 import nodejsLogo from "../assets/nodejslogo.svg";
 import nextJsLogo from "../assets/Nextjslogo.svg";
-import gologo from "../assets/gologo.svg";
 import tsLogo from "../assets/tsLogo.svg";
+import gologo from "../assets/golanguage.svg";
 import databaseLogo from "../assets/database.svg";
 
 export const TechSection = () => {
