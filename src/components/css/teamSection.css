@@ -102,3 +102,35 @@
   font-size: 0.98rem;
   display: block;
 }
+/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\responsive design\\\\\\\\\\\\\\\\\code\\\\\\\\\\\\\\ */
+
+/* Add to teamSection.css */
+@media (max-width: 1200px) {
+  .team-testimonials-wall {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .team-heading {
+    font-size: 30px;
+  }
+  .team-subheading {
+    font-size: 20px;
+  }
+  .team-testimonials-wall {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  .team-heading {
+    font-size: 26px;
+  }
+  .team-subheading {
+    font-size: 18px;
+  }
+  .team-note {
+    font-size: 1rem;
+  }
+}

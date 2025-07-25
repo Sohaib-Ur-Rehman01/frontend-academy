@@ -1,8 +1,10 @@
 .testimonials-section {
   background: linear-gradient(135deg, #0a5ca8 0%, #0a3570 100%);
-  padding: 40px 0;
+  /* padding: 40px 0; */
+  padding: 40px 20px;
   text-align: center;
-  min-height: 100vh;
+  /* min-height: 100vh; */
+  min-height: auto;
 }
 
 .testimonials-heading {
@@ -101,4 +103,35 @@
 
 .show-more-btn button:hover svg {
   color: black;
+}
+/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\responsive code \\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+
+/* Add to testimonial.css */
+@media (max-width: 1200px) {
+  .testimonials-wall {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonials-heading {
+    font-size: 1.8rem;
+  }
+  .testimonials-wall {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .testimonial-card {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .testimonials-heading {
+    font-size: 1.5rem;
+  }
+  .testimonial-user img {
+    width: 50px;
+    height: 50px;
+  }
 }

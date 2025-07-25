@@ -21,14 +21,15 @@ h1 {
   margin-bottom: 40px;
 }
 .live-event-banner {
-  position: absolute;
+  position: relative;
   top: 100%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: rgba(31, 31, 31, 0.8); /* Semi-transparent dark */
   color: #e6e6e6;
   padding: 24px 48px;
-  width: 170vh;
+  /* width: 170vh; */
+  width: 90%;
   height: 15vh;
   font-size: 16px;
   font-weight: 400;
@@ -72,46 +73,6 @@ h1 {
   font-weight: 600;
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  h1 {
-    font-size: 32px;
-  }
-
-  .subheading {
-    font-size: 18px;
-  }
-
-  .icon-circle {
-    width: 70px;
-    height: 70px;
-    font-size: 14px;
-  }
-
-  .learning-paths {
-    font-size: 16px;
-  }
-}
-
-@media (max-width: 480px) {
-  h1 {
-    font-size: 28px;
-  }
-
-  .subheading {
-    font-size: 16px;
-  }
-
-  .icon-circle {
-    width: 60px;
-    height: 60px;
-    font-size: 12px;
-  }
-
-  .tech-icons {
-    gap: 12px;
-  }
-}
 .devsetup {
   color: #e63946;
   font-weight: bold;
@@ -123,7 +84,9 @@ h1 {
   color: white;
   padding: 30px 10px;
   text-align: center;
-  height: 68vh;
+  min-height: auto;
+  height: auto;
+  padding-bottom: 60px;
 }
 .tech-section > h1 {
   font-size: 36px;
@@ -151,4 +114,61 @@ h1 {
   color: #4299e1;
   margin-right: 8px;
   font-size: 14px;
+}
+
+/* Responsive adjustments */
+/* Add to techSection.css */
+@media (max-width: 1200px) {
+  .tech-icons {
+    gap: 40px;
+  }
+}
+
+@media (max-width: 992px) {
+  .tech-section h1 {
+    font-size: 32px;
+  }
+  .tech-icons {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .tech-section {
+    padding: 30px 10px;
+  }
+  .tech-section h1 {
+    font-size: 28px;
+  }
+  .tech-icons {
+    gap: 20px;
+  }
+  .icon-circle {
+    width: 60px;
+    height: 60px;
+  }
+  .live-event-banner {
+    padding: 16px 24px;
+    height: auto;
+    white-space: normal;
+  }
+}
+
+@media (max-width: 576px) {
+  .tech-section h1 {
+    font-size: 24px;
+  }
+  .subheading {
+    font-size: 14px;
+  }
+  .tech-icons {
+    gap: 15px;
+  }
+  .icon-circle {
+    width: 50px;
+    height: 50px;
+  }
+  .learning-paths {
+    font-size: 14px;
+  }
 }

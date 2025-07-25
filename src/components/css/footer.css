@@ -148,3 +148,41 @@
     align-items: center;
   }
 }
+/* \\\\\\\\\\\\\\\\\\\\\\\\responsive code\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+
+/* Add to footer.css */
+@media (max-width: 768px) {
+  .footer-section {
+    padding: 30px 20px;
+  }
+  .footer-logo {
+    font-size: 2rem;
+  }
+  .footer-logo-red {
+    font-size: 2rem;
+  }
+  .footer-nav {
+    gap: 12px;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer-section {
+    padding: 20px 15px;
+  }
+  .footer-brand,
+  .footer-social-apps {
+    min-width: 100%;
+  }
+  .footer-nav {
+    gap: 8px;
+  }
+  .footer-nav a {
+    font-size: 0.9rem;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+}

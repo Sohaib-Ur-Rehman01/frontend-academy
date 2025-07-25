@@ -1,9 +1,12 @@
 .quizSection {
   max-width: auto; /* Industry-standard readable width */
   margin: 0 auto; /* Center horizontally */
-  padding: 64px 24px; /* Responsive vertical & horizontal padding */
+  /* padding: 64px 24px; Responsive vertical & horizontal padding */
   text-align: center;
-  height: 60vh;
+  /* height: 60vh; */
+  height: auto;
+  min-height: 400px; /* Or whatever minimum you want */
+  padding: 40px 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -40,4 +43,32 @@
 
 .quizButton:hover {
   background-color: #9f1239; /* Darker on hover */
+}
+/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\responsive code\\\\\\\\\\\\\\\\\\\\\ */
+/* Add to quizSection.css */
+@media (max-width: 992px) {
+  .quizHeading {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .quizSection {
+    padding: 30px 15px;
+  }
+  .quizHeading {
+    font-size: 28px;
+  }
+  .quizDescription {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .quizHeading {
+    font-size: 24px;
+  }
+  .quizButton {
+    padding: 12px 24px;
+  }
 }

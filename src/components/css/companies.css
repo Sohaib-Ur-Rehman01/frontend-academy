@@ -60,3 +60,47 @@
 .expert-btn:hover {
   background: #b71c1c;
 }
+/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\responsive design\\\\\\\\\\\\\\\\\code\\\\\\\\\\\\\\ */
+/* Add to companies.css */
+@media (max-width: 1200px) {
+  .expert-logos {
+    gap: 40px;
+  }
+}
+
+@media (max-width: 992px) {
+  .expert-heading {
+    font-size: 32px;
+  }
+  .expert-subheading {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 768px) {
+  .expert-heading {
+    font-size: 28px;
+  }
+  .expert-subheading {
+    font-size: 20px;
+  }
+  .expert-logos {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .expert-heading {
+    font-size: 24px;
+  }
+  .expert-subheading {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  .expert-logos {
+    gap: 20px;
+  }
+  .expert-logo img {
+    width: 80px;
+  }
+}

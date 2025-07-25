@@ -1,13 +1,7 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: "Inter", "Segoe UI", "Helvetica Neue", sans-serif;
-  background-color: black;
-  color: white;
-}
-
 .content {
-  height: 120vh;
+  /* height: 120vh; */
+  height: auto;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   padding: 40px;
@@ -38,6 +32,7 @@ body {
   line-height: 1.6;
   margin-bottom: 30px;
   max-width: 600px;
+  color: white;
 }
 
 .button-container {
@@ -112,4 +107,65 @@ body {
 .stat-label {
   font-size: 1rem;
   color: #ddd;
+}
+/* \\\\\\\\\\\\\\\\\\\\\\\\\\responsive code\\\\\\\\\\\\\\\\\\\ */
+
+/* Add to videoSection.css */
+@media (max-width: 1200px) {
+  .hero-container {
+    gap: 30px;
+  }
+  .headingContent {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .content {
+    padding: 30px;
+  }
+  .hero-container {
+    flex-direction: column;
+  }
+  .text-section,
+  .video-section {
+    width: 100%;
+  }
+  .stats-container {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .stat-item {
+    flex: 1 1 40%;
+  }
+}
+
+@media (max-width: 768px) {
+  .content {
+    padding: 20px;
+  }
+  .headingContent {
+    font-size: 1.8rem;
+  }
+  .hero-description {
+    font-size: 1rem;
+  }
+  .button-container {
+    flex-direction: column;
+  }
+  .stat-number {
+    font-size: 42px;
+  }
+}
+
+@media (max-width: 576px) {
+  .content {
+    padding: 15px;
+  }
+  .headingContent {
+    font-size: 1.5rem;
+  }
+  .stat-item {
+    flex: 1 1 100%;
+  }
 }

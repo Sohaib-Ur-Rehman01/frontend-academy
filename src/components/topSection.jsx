@@ -1,4 +1,4 @@
-import React, { useMemo } from "react";
+import React, { useMemo, useState } from "react";
 import "./css/topSection.css";
 import { CiSearch } from "react-icons/ci";
 import quote from "../assets/quote.svg";
@@ -12,11 +12,16 @@ const bgImages = [
 ];
 
 export const TopSection = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   // Pick a random image on each render
   const bgImage = useMemo(() => {
     const idx = Math.floor(Math.random() * bgImages.length);
     return bgImages[idx];
   }, []);
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
 
   return (
     <header
@@ -29,7 +34,17 @@ export const TopSection = () => {
         <span className="top-hero-logo">
           Frontend<span className="top-hero-logo-red">Masters</span>
         </span>
-        <div className="top-hero-nav-links">
+
+        <div
+          className={`mobile-menu-toggle ${isMenuOpen ? "active" : ""}`}
+          onClick={toggleMenu}
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <div className={`top-hero-nav-links ${isMenuOpen ? "active" : ""}`}>
           <div>
             <a href="#">Features</a>
             <div className="features-dropdown">
@@ -45,10 +60,21 @@ export const TopSection = () => {
           </a>
           <a href="#">Blog</a>
           <a href="#">Pricing</a>
+
+          {/* 👇 Buttons move here on smaller screens */}
+          <div className="menu-auth-buttons">
+            <button href="#" className="top-hero-login-btn">
+              Login
+            </button>
+            <button href="#" className="top-hero-join-btn">
+              Join Now
+            </button>
+          </div>
         </div>
+
+        {/* 👇 These show only on large screens */}
         <div className="top-hero-nav-actions">
           <a href="#" className="search">
-            <span className="search"></span>
             <CiSearch />
           </a>
           <a href="#" className="top-hero-join-btn">
@@ -59,6 +85,7 @@ export const TopSection = () => {
           </a>
         </div>
       </nav>
+
       <div className="hero-wrapper">
         <div className="top-hero-content">
           <h3 className="top-hero-subtitle">
