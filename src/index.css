@@ -1,18 +1,18 @@
 /* Add this to index.css */
 @import "tailwindcss";
 
-/* Base styles to ensure full width */
 html,
 body {
   width: 100%;
-  min-height: 100vh;
+  max-width: 100%;
+  overflow-x: hidden;
   margin: 0;
   padding: 0;
-  overflow-x: hidden; /* Prevent horizontal scroll */
-  background-color: black;
 }
 
-#root {
-  width: 100%;
-  min-height: 100vh;
+* {
+  box-sizing: border-box;
+}
+* {
+  /* outline: 1px solid red; */
 }

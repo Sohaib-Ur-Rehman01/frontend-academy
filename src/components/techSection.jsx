@@ -11,19 +11,23 @@ export const TechSection = () => {
   return (
     <>
       <div className="frontend-masters-section">
-        <div className="container">
-          <section className="hero">
-            <div className="live-event-banner">
-              <b> Join us live online!</b>
-              <b className="devsetup">AI Developer Setup</b> on Jul 30, 2025.
-            </div>
-          </section>
+        <div className="max-container">
+          <div className="container">
+            <section className="hero">
+              <div className="live-event-banner">
+                <b> Join us live online!</b>
+                <b className="devsetup">AI Developer Setup</b> on Jul 30, 2025.
+              </div>
+            </section>
+          </div>
         </div>
       </div>
       {/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ tech section completed */}
 
       <div className="tech-section">
-        <h1>Gain Practical Tech Skills from Experts You Can Trust</h1>
+        <h1 className="my-fav-color">
+          Gain Practical Tech Skills from Experts You Can Trust
+        </h1>
         <p className="subheading">
           JavaScript, React, and TypeScript to Node.js and Backend (Go, Git,
           Docker, & More)

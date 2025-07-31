@@ -1,7 +1,7 @@
 .expert-section {
   background: linear-gradient(135deg, #232323 0%, #181818 100%);
   background-color: #212121;
-  padding: 60px 0 40px 0;
+  padding: 64px 48px;
   text-align: center;
 }
 
@@ -75,6 +75,11 @@
   .expert-subheading {
     font-size: 22px;
   }
+  .expert-logos {
+    /* background-color: #bf2d28; */
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 768px) {
@@ -86,6 +91,9 @@
   }
   .expert-logos {
     gap: 30px;
+  }
+  .expert-btn {
+    width: 100%;
   }
 }
 
@@ -102,5 +110,8 @@
   }
   .expert-logo img {
     width: 80px;
+  }
+  .expert-btn {
+    width: 100%;
   }
 }

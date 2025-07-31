@@ -1,7 +1,10 @@
-import React, { useMemo, useState } from "react";
+import React, { useMemo, useState, useEffect } from "react";
 import "./css/topSection.css";
 import { CiSearch } from "react-icons/ci";
 import quote from "../assets/quote.svg";
+import logo from "../assets/frontendMasterlogo.svg";
+import { CiMenuBurger } from "react-icons/ci";
+import { MdClose } from "react-icons/md";
 
 // Array of background images (add your own image URLs)
 const bgImages = [
@@ -19,107 +22,172 @@ export const TopSection = () => {
     const idx = Math.floor(Math.random() * bgImages.length);
     return bgImages[idx];
   }, []);
+  useEffect(() => {
+    if (isMenuOpen) {
+      document.body.style.overflow = "hidden";
+      document.documentElement.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+      document.documentElement.style.overflow = "auto";
+    }
+
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [isMenuOpen]);
+
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
   return (
-    <header
-      className="top-hero-section"
-      style={{
-        backgroundImage: `url(${bgImage})`,
-      }}
-    >
-      <nav className="top-hero-navbar">
-        <span className="top-hero-logo">
-          Frontend<span className="top-hero-logo-red">Masters</span>
-        </span>
+    <div className="top-main-con">
+      <header
+        className="top-hero-section"
+        style={{
+          backgroundImage: `url(${bgImage})`,
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center",
+        }}
+      >
+        {/* res-navbar for tablet and medium screen devices start */}
+        <div className="res-nav">
+          <div className="res-img res-sec-container">
+            <div className="res-nav-image">
+              <img src={logo} alt="" className="res-image" />
+            </div>
+            <div className="res-navLinks">
+              <a href="#">Features</a>
+              <div className="features-dropdown">
+                <a href="#">All Features</a>
+                <a href="#">Learning Paths</a>
+                <a href="#">Interactive Courses</a>
+              </div>
 
-        <div
-          className={`mobile-menu-toggle ${isMenuOpen ? "active" : ""}`}
-          onClick={toggleMenu}
-        >
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-
-        <div className={`top-hero-nav-links ${isMenuOpen ? "active" : ""}`}>
-          <div>
-            <a href="#">Features</a>
-            <div className="features-dropdown">
-              <a href="#">All Features</a>
-              <a href="#">Learning Paths</a>
-              <a href="#">Interactive Courses</a>
+              <a href="#">Learn</a>
+              <a href="#">Courses</a>
+              <a href="#">
+                Tutorials <span className="top-hero-new">NEW</span>
+              </a>
+              <a href="#">Blog</a>
+              <a href="#">Pricing</a>
             </div>
           </div>
-          <a href="#">Learn</a>
-          <a href="#">Courses</a>
-          <a href="#">
-            Tutorials <span className="top-hero-new">NEW</span>
-          </a>
-          <a href="#">Blog</a>
-          <a href="#">Pricing</a>
+          <div className="loginSignUpSearchBar">
+            <div className="searchbar">
+              <CiSearch />
+            </div>
+            <div className="joinNow">Join Now</div>
+            <div className="login">Login</div>
+          </div>
+        </div>
+        {/* res-navbar for tablet and medium screen devices end */}
+        {/* res-navbar for mobiles and small screen devices start */}
+        <div className="small-nav">
+          <div className="sm-img">
+            <img src={logo} alt="" className="res-image" />
+          </div>
+          <div className="searchAndToggleIcon">
+            <div className="searchbar">
+              <CiSearch />
+            </div>
 
-          {/* 👇 Buttons move here on smaller screens */}
-          <div className="menu-auth-buttons">
-            <button href="#" className="top-hero-login-btn">
-              Login
-            </button>
-            <button href="#" className="top-hero-join-btn">
-              Join Now
-            </button>
+            <div className="toggle" onClick={toggleMenu}>
+              {isMenuOpen ? <MdClose /> : <CiMenuBurger />}
+            </div>
+          </div>
+        </div>
+        {isMenuOpen && (
+          <div className="mobile-menu">
+            <a href="#">Features</a>
+            <a href="#">Learn</a>
+            <a href="#">Courses</a>
+            <a href="#">
+              Tutorials <span className="top-hero-new">NEW</span>
+            </a>
+            <a href="#">Blog</a>
+            <a href="#">Pricing</a>
+            <div className="loginSignUpSearchBar">
+              <div className="joinNow">Join Now</div>
+              <div className="login">Login</div>
+              <div className="contact-supp-sm">
+                Contact Support:
+                <a href="#" className="email">
+                  support@frontendmasters.com
+                </a>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* res-navbar for mobiles and small screen devices end */}
+        <div className="nav-main-container">
+          <div className="logoAndNavLinks">
+            <div className="imag">
+              <img src={logo} alt="" className="image" />
+            </div>
+            <div className="navLinks">
+              <a href="#">Features</a>
+              <div className="features-dropdown">
+                <a href="#">All Features</a>
+                <a href="#">Learning Paths</a>
+                <a href="#">Interactive Courses</a>
+              </div>
+
+              <a href="#">Learn</a>
+              <a href="#">Courses</a>
+              <a href="#">
+                Tutorials <span className="top-hero-new">NEW</span>
+              </a>
+              <a href="#">Blog</a>
+              <a href="#">Pricing</a>
+            </div>
+          </div>
+          <div className="loginSignUpSearchBar">
+            <div className="searchbar">
+              <CiSearch />
+            </div>
+            <div className="joinNow">Join Now</div>
+            <div className="login">Login</div>
           </div>
         </div>
 
-        {/* 👇 These show only on large screens */}
-        <div className="top-hero-nav-actions">
-          <a href="#" className="search">
-            <CiSearch />
-          </a>
-          <a href="#" className="top-hero-join-btn">
-            Join Now
-          </a>
-          <a href="#" className="top-hero-login-btn">
-            Login
-          </a>
+        <div className="hero-content-section">
+          <div className="hero-heading">
+            <h2>In-Depth Frontend & Fullstack Courses</h2>
+            <h1>
+              Your Path to Senior <br /> Developer and Beyond
+            </h1>
+          </div>
+          <div className="hero-buttons">
+            <div className="btnforfreeTrial">
+              <button>Start a Free 5-day Trial</button>
+            </div>
+            <div className="btnforBrowseCourses">
+              <button>Browse Our Courses</button>
+            </div>
+          </div>
         </div>
-      </nav>
 
-      <div className="hero-wrapper">
-        <div className="top-hero-content">
-          <h3 className="top-hero-subtitle">
-            In-Depth Frontend &amp; Fullstack Courses
-          </h3>
-          <h1 className="top-hero-title">
-            Your Path to Senior
+        <div className="quote-main-container">
+          <div className="quote-image">
+            <img src={quote} alt="" />
+          </div>
+          <div className="para-content">
+            <p>
+              If you understand how CSS fundamentally works, you can solve
+              problems easily. But people just throw things at the wall hoping
+              they stick, instead of learning the core concepts.
+            </p>
             <br />
-            Developer and Beyond
-          </h1>
-          <div className="top-hero-btns">
-            <a href="#" className="top-hero-trial-btn">
-              Start a Free 5-day Trial
-            </a>
-            <a href="#" className="top-hero-browse-btn">
-              Browse Our Courses
-            </a>
+            <p>
+              Kevin PowellYouTube <span>YouTube</span>
+            </p>
           </div>
         </div>
-      </div>
-      <div className="top-hero-quote-box">
-        <div className="top-hero-quote-icon">
-          <img src={quote} alt="" />
-        </div>
-        <div className="para">
-          Teaching forces you to know something in every excruciating detail.
-          That's knowledge I get to keep forever and has paid off in my career.
-          <div className="top-hero-quote-author">
-            <span className="top-hero-quote-name">Steve Kinney</span>
-            <span className="top-hero-quote-company">Temporal</span>
-          </div>
-        </div>
-      </div>
-    </header>
+      </header>
+    </div>
   );
 };
 

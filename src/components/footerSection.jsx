@@ -5,16 +5,82 @@ import facebook from "../assets/facebook.svg";
 import linkdin from "../assets/linkdin.svg";
 import appleStoreLogo from "../assets/appleappstore.svg";
 import googlePlayStoreLogo from "../assets/googleplaystoreLogo.svg";
+import logo from "../assets/frontendMasterlogo.svg";
 export const FooterSection = () => {
   return (
     <>
-      <footer className="footer-section">
-        <div className="footer-main">
-          <div className="footer-brand">
-            <span className="footer-logo">
-              Frontend<span className="footer-logo-red">Masters</span>
-            </span>
-            <nav className="footer-nav">
+      <div className="con-main-footer">
+        <div className="main-container">
+          <div className="s-container">
+            <div className="container">
+              <div className="linksAndLogo">
+                <div>
+                  <img src={logo} alt="" className="logo" />
+                </div>
+                <div className="nav">
+                  <a href="#">Courses</a>
+                  <a href="#">Learn</a>
+                  <a href="#">Workshops</a>
+                  <a href="#">Topics</a>
+                  <a href="#">Teachers</a>
+                  <a href="#">Reviews</a>
+                  <a href="#">Guides</a>
+                  <a href="#">Blog</a>
+                  <a href="#">FAQ</a>
+                  <a href="#">Login</a>
+                  <a href="#">Join Now</a>
+                </div>
+              </div>
+            </div>
+            <div className="social-apps-icons">
+              <div className="icons">
+                <div>
+                  <img src={instagramLogo} alt="" />
+                </div>
+                <div>
+                  <img src={x} alt="" />
+                </div>
+                <div>
+                  <img src={linkdin} alt="" />
+                </div>
+                <div>
+                  <img src={facebook} alt="" />
+                </div>
+              </div>
+              <div className="googleAndAppStore">
+                <div className="appstore">
+                  <img src={appleStoreLogo} alt="" />
+                </div>
+                <div className="googlestore">
+                  <img src={googlePlayStoreLogo} alt="" />
+                </div>
+              </div>
+              <div className="contact">
+                Contact:
+                <a href="mailto:support@frontendmasters.com">
+                  support@frontendmasters.com
+                </a>
+              </div>
+            </div>
+          </div>
+          <hr className="divider" />
+          <div className="buttom-container">
+            <div className="minneapolis">
+              Frontend Masters is proudly made in Minneapolis, MN
+            </div>
+            <div className="minneapolis">
+              © 2025 Frontend Masters .<a href="#">Terms of service</a>.{" "}
+              <a href="#">Privacy Policy</a>
+            </div>
+          </div>
+        </div>
+        {/* /////////////////////////////////////resfooterformediumdevices start */}
+        <div className="res-footer-main-container">
+          <div className="foot-res-img">
+            <img src={logo} alt="" className="res-foot-image" />
+          </div>
+          <div className="footer-nav-link">
+            <div className="res-nav-foot">
               <a href="#">Courses</a>
               <a href="#">Learn</a>
               <a href="#">Workshops</a>
@@ -26,54 +92,49 @@ export const FooterSection = () => {
               <a href="#">FAQ</a>
               <a href="#">Login</a>
               <a href="#">Join Now</a>
-            </nav>
+            </div>
           </div>
-          <div className="footer-social-apps">
-            <div className="footer-social">
-              {/* Social Icons */}
-              <a href="#" className="footer-icon" title="X">
-                {/* X (Twitter) SVG */}
-                <img src={x} alt="" />
-              </a>
-              <a href="#" className="footer-icon" title="LinkedIn">
-                <img src={linkdin} alt="" />
-              </a>
-              <a href="#" className="footer-icon" title="Facebook">
-                <img src={facebook} alt="" />
-              </a>
-              <a href="#" className="footer-icon" title="Instagram">
-                <img src={instagramLogo} alt="" />
-              </a>
+          <div className="res-footer-social-icons">
+            <div>
+              <img src={instagramLogo} alt="" />
             </div>
-            <div className="footer-apps">
-              <a href="#" className="footer-app-btn">
-                <img src={googlePlayStoreLogo} alt="App Store" />
-              </a>
-              <a href="#" className="footer-app-btn">
-                <img src={appleStoreLogo} alt="Google Play" />
-              </a>
+            <div>
+              <img src={x} alt="" />
             </div>
-            <div className="footer-contact">
-              Contact:
-              <a href="mailto:support@frontendmasters.com">
-                support@frontendmasters.com
-              </a>
+            <div>
+              <img src={linkdin} alt="" />
+            </div>
+            <div>
+              <img src={facebook} alt="" />
+            </div>
+          </div>
+          <div className="res-footer-store">
+            <div className="appstore">
+              <img src={appleStoreLogo} alt="" />
+            </div>
+            <div className="googlestore">
+              <img src={googlePlayStoreLogo} alt="" />
+            </div>
+          </div>
+          <div className="res-footer-contact">
+            <span>Contact:</span>
+            <a href="mailto:support@frontendmasters.com">
+              support@frontendmasters.com
+            </a>
+          </div>
+          <hr className="divider" />
+          <div className="buttom-container">
+            <div className="minneapolis">
+              Frontend Masters is proudly made in Minneapolis, MN
+            </div>
+            <div className="minneapolis">
+              © 2025 Frontend Masters .<a href="#">Terms of service</a>.{" "}
+              <a href="#">Privacy Policy</a>
             </div>
           </div>
         </div>
-        <hr className="footer-divider" />
-
-        <div className="footer-bottom">
-          <div className="footer-made">
-            Frontend Masters is proudly made in Minneapolis, MN
-          </div>
-          <div className="footer-terms">
-            © 2025 Frontend Masters ·{""}
-            <a href="#">Terms of Service</a>·{""}
-            <a href="#">Privacy Policy</a>
-          </div>
-        </div>
-      </footer>
+      </div>
+      {/* /////////////////////////////////////resfooterformediumdevices end*/}
     </>
   );
 };

@@ -16,16 +16,14 @@ export const TeamSection = () => {
         <button className="team-btn">Browse Team Plans</button>
 
         <div className="team-testimonials-wall">
-          <div className="team-testimonial-card">
+          <div className="team-testimonial-card-sara">
             <img src={quote} alt="" />
             <blockquote>
-              <span className="team-quote-icon"></span>
+              {/* <span className="team-quote-icon"></span> */}
               When, without any prompting; your manager offers you a Frontend
-              Masters subscription you know you picked a good place to work
-              <br />
-              😍
+              Masters subscription. 😊
             </blockquote>
-            <div className="team-testimonial-user">
+            <div className="team-testimonial-user-sara">
               <img
                 src="https://randomuser.me/api/portraits/women/44.jpg"
                 alt="Sarah O'Brien"
@@ -40,7 +38,7 @@ export const TeamSection = () => {
             <img src={quote} alt="" />
 
             <blockquote>
-              <span className="team-quote-icon"></span>
+              {/* <span className="team-quote-icon"></span> */}
               Frontend Masters I've had a license for at least 4 years now. Got
               one for all my team when I was a team lead. The content is first
               class and the price is very cheap especially considering what you
@@ -61,7 +59,7 @@ export const TeamSection = () => {
             <img src={quote} alt="" />
 
             <blockquote>
-              <span className="team-quote-icon"></span>
+              {/* <span className="team-quote-icon"></span> */}
               Our team got a Frontend Masters subscription and it has been super
               helpful, especially for the new devs on our team who aren't as
               familiar with frontend technologies. I highly recommend giving
