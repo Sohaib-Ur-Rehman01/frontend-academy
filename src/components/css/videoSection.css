@@ -139,6 +139,13 @@
     text-align: center;
     align-items: center;
   }
+  .text-section {
+    align-items: center;
+  }
+  .hero-description {
+    align-items: center;
+    text-align: center;
+  }
   .hero-img-align {
     /* background-color: lime; */
     display: flex;
