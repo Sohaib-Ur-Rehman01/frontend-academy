@@ -1,9 +1,11 @@
 .content {
   /* height: 120vh; */
-  height: 100vh;
-  min-height: 100vh;
+  height: 100%;
+  /* min-height: 100vh; */
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 40px;
   box-sizing: border-box;
   background-color: #333333;
@@ -11,16 +13,14 @@
 .max-container {
   max-width: 1280px; /* You can tweak this to 1200px or 1440px based on your design */
   margin: 0 auto;
-  padding: 0 20px;
+  /* padding: 0 20px; */
   box-sizing: border-box;
 }
 
 .hero-container {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  padding-bottom: 2rem; /* reduce if too much */
+  flex-direction: column;
+  gap: 10px;
 }
 
 .text-section {
@@ -32,7 +32,6 @@
 
 .headingContent {
   font-size: 2.5rem;
-  margin-bottom: 20px;
 }
 
 .hero-description {
@@ -46,7 +45,7 @@
 .button-container {
   display: flex;
   gap: 15px;
-  margin-bottom: 40px;
+  /* margin-bottom: 40px; */
 }
 
 .videosectionbtn,
@@ -117,12 +116,11 @@
   font-size: 1rem;
   color: #ddd;
 }
-.videoSECTION {
-  padding-bottom: 0;
-  margin-bottom: 0;
+
+.hero-img-align {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
+  gap: 20px;
 }
 
 /* \\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
@@ -130,69 +128,76 @@
 
 /* Add to videoSection.css */
 @media screen and (min-width: 1440px) {
-  .videoSECTION {
-    padding-bottom: 0 !important;
-  }
 }
-@media (max-width: 1200px) {
+@media (min-width: 650px) and (max-width: 1020px) {
   .hero-container {
-    gap: 30px;
+    /* background-color: #c53030; */
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
   }
-  .headingContent {
-    font-size: 2.2rem;
+  .hero-img-align {
+    /* background-color: lime; */
+    display: flex;
+    flex-direction: column-reverse;
+    /* justify-content: center; */
+    text-align: center;
+  }
+
+  .button-container {
+    /* background-color: lime; */
+    display: flex;
+    justify-content: center;
+  }
+  .videosectionbtn,
+  .learningpathbtn {
+    width: 220px;
+    height: 50px;
+  }
+  .stats-container {
+    /* background-color: lime; */
+    display: flex;
+    flex-wrap: wrap; /* ✅ Allow wrapping to form multiple rows */
+    justify-content: center;
+    gap: 2rem; /* ✅ spacing between items */
+  }
+
+  .stat-item {
+    /* background-color: black; */
+    flex: 0 1 calc(50% - 2rem);
+    box-sizing: border-box;
+    text-align: center;
   }
 }
 
-@media (max-width: 992px) {
-  .content {
-    padding: 30px;
-  }
-  .hero-container {
+@media (min-width: 250px) and (max-width: 649px) {
+  .hero-img-align {
+    /* background-color: orange; */
+    display: flex;
     flex-direction: column-reverse;
+    /* justify-content: center; */
+    text-align: center;
   }
-  .text-section,
-  .video-section {
+
+  .button-container {
+    /* background-color: rgb(219, 19, 19); */
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: column;
+  }
+  .videosectionbtn,
+  .learningpathbtn {
     width: 100%;
   }
   .stats-container {
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-  .stat-item {
-    flex: 1 1 40%;
-  }
-}
-
-@media (max-width: 768px) {
-  .content {
-    padding: 20px;
-  }
-  .headingContent {
-    font-size: 1.8rem;
-  }
-  .hero-description {
-    font-size: 1rem;
-  }
-  .button-container {
+    /* background-color: lime; */
+    display: flex;
     flex-direction: column;
-  }
-  .stat-number {
-    font-size: 42px;
-  }
-}
-
-@media (max-width: 576px) {
-  .content {
-    padding: 15px;
-  }
-  .headingContent {
-    font-size: 1.5rem;
-  }
-  .stat-item {
-    flex: 1 1 100%;
-  }
-  .quizSection {
-    /* width: 100%; */
-    height: auto;
+    justify-content: center;
+    gap: 2rem; /* ✅ spacing between items */
   }
 }

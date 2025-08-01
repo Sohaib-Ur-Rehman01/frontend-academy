@@ -1,3 +1,6 @@
+.tech-main-container {
+  background-color: rgb(165, 17, 17);
+}
 .max-container {
   max-width: 1280px;
   margin: 0 auto;
@@ -28,31 +31,24 @@ h1 {
   margin-bottom: 40px;
 }
 .live-event-banner {
-  position: relative;
-  top: 100%;
-  left: 120%;
-  transform: translate(-50%, -50%);
-  background-color: rgba(34, 34, 34, 0.8); /* Semi-transparent dark */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(34, 34, 34, 0.8);
   color: #e6e6e6;
   padding: 24px 48px;
 
   width: 90%; /* Slightly less than full */
-  max-width: 1200px; /* Prevents it from becoming too wide on big screens */
+  max-width: 1200px;
 
-  height: 10vh; /* Fixed height */
   font-size: 16px;
   font-weight: 400;
   z-index: 10;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  white-space: nowrap;
-  margin-top: 0.01%;
+  /* white-space: nowrap; */
+  /* margin-top: 0.01%; */
   border: 1px solid rgba(255, 255, 255, 0.11);
 
-  box-sizing: border-box;
-  margin-left: auto;
-  margin-right: auto;
+  display: none;
 }
 
 .icon-circle {
@@ -96,7 +92,7 @@ h1 {
 /* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ tech section portion deepseek */
 .tech-section {
   background-color: rgb(37, 35, 35);
-  color: white;
+
   padding: 30px 10px;
   text-align: center;
   min-height: auto;
@@ -106,11 +102,10 @@ h1 {
 .tech-section > h1 {
   font-size: 36px;
 }
-.frontend-masters-section {
+.frontends-masters-section {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   background-color: #262424;
-  color: white;
   padding: 10px 20px;
   text-align: center;
 }
@@ -123,6 +118,7 @@ h1 {
 /* CSS */
 .hero {
   position: relative; /* very important */
+  background-color: #262424;
 }
 
 .live-icon {
@@ -133,7 +129,7 @@ h1 {
 
 /* Responsive adjustments */
 /* Add to techSection.css */
-@media (max-width: 1200px) {
+@media (max-width: 2800px) {
   .tech-icons {
     gap: 40px;
   }
@@ -154,7 +150,7 @@ h1 {
   }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 250px) and (max-width: 768px) {
   .tech-section {
     padding: 34px 48px;
   }
@@ -168,19 +164,13 @@ h1 {
     width: 60px;
     height: 60px;
   }
-  .live-event-banner {
-    padding: 16px 24px;
-    height: auto;
-    white-space: normal;
-    /* margin-top: -7%; */
-    display: none;
-  }
+
   .image {
     display: none;
   }
 }
 
-@media (max-width: 576px) {
+/* @media (max-width: 576px) {
   .tech-section h1 {
     font-size: 24px;
   }
@@ -200,7 +190,12 @@ h1 {
   .image {
     display: none;
   }
+  .frontends-masters-section {
+    position: relative;
+    left: 19%;
+  }
   .live-event-banner {
+    position: relative;
     margin-top: -14%;
   }
-}
+} */

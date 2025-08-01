@@ -38,6 +38,7 @@
 .testimonials img {
   width: 38px;
   height: auto;
+  /* border: 1px solid lime; */
 }
 
 .profile img {
@@ -58,28 +59,38 @@
 }
 
 .btn {
-  flex: 0 0 100%;
-  display: flex;
-  justify-content: center;
+  flex: 0 0 100%; /* ✅ Keep this as required */
   height: 80px;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
-.buttonShow {
-  border-radius: 30px;
+
+.btn-inner {
+  width: 160px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   border: 1px solid white;
   padding: 16px 24px;
-  width: 100%;
-  max-width: 400px;
+  border-radius: 30px;
+  gap: 3px;
+}
+
+.buttonShow {
+  white-space: nowrap;
   font-size: 18px;
-  position: relative;
-  left: 24px;
+  padding: 0;
   color: white;
 }
+
 .arrow {
   color: white;
-  position: relative;
-  top: 20px;
+  font-size: 18px;
+}
+.card-container {
+  display: none;
 }
 /* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\deepseek */
 
@@ -94,29 +105,74 @@
   .testimonials {
     margin-bottom: 20px;
   }
+  .card-container {
+    /* display: none; */
+  }
 }
 /* For screens between 601px and 899px - 2 columns */
 @media (min-width: 601px) and (max-width: 899px) {
+  /* Layout of all cards in column (stacked vertically) */
   .testimonial-main-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    /* align-items: center; */
-    gap: 20px;
+    /* gap: 24px; */
     height: 100%;
   }
 
+  /* Each .card has 2 testimonials → show them in row */
   .card {
     display: flex;
-    /* flex-direction: column; */
-    justify-content: center;
-    flex-wrap: wrap;
+    flex-direction: row;
     gap: 20px;
+    justify-content: center;
+    align-items: stretch;
+  }
+  .image-quote {
     width: 100%;
   }
 
+  /* Styling each testimonial card */
   .testimonials {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* so content & profile stay balanced */
+    /* background-color: #1a1a1a; */
+    color: white;
+    border-radius: 12px;
+    min-width: 300px;
+    max-width: 500px;
+    padding: 24px;
+  }
+  .testimonials p {
+    min-height: 80px;
+  }
+  .length-set {
+    /* background-color: lime; */
+    position: relative;
+    bottom: 193px;
+  }
+}
+@media (min-width: 722px) and (max-width: 898px) {
+  .length-set {
+    /* background-color: rgb(225, 7, 14); */
+    position: relative;
+    bottom: 165px;
+  }
+}
+@media (min-width: 700px) and (max-width: 704px) {
+  .length-set {
+    /* background-color: blueviolet; */
+    position: relative;
+    bottom: 1px;
+  }
+}
+@media (min-width: 601px) and (max-width: 700px) {
+  .length-set {
+    /* background-color: blueviolet; */
+    position: relative;
+    bottom: -10px;
   }
 }
 /* For screens up to 600px - single column */
@@ -133,6 +189,6 @@
   }
 
   .testimonials {
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
   }
 }

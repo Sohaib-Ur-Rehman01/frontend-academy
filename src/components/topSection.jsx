@@ -101,6 +101,12 @@ export const TopSection = () => {
         {isMenuOpen && (
           <div className="mobile-menu">
             <a href="#">Features</a>
+            <hr className="divider-menu" />
+            <div className="feature-menu">
+              <a href="#">Overview</a>
+              <a href="#">For Teams</a>
+              <a href="#">For Enterprises</a>
+            </div>
             <a href="#">Learn</a>
             <a href="#">Courses</a>
             <a href="#">
@@ -112,7 +118,7 @@ export const TopSection = () => {
               <div className="joinNow">Join Now</div>
               <div className="login">Login</div>
               <div className="contact-supp-sm">
-                Contact Support:
+                <span className="con-sm">Contact:</span>
                 <a href="#" className="email">
                   support@frontendmasters.com
                 </a>
@@ -125,7 +131,7 @@ export const TopSection = () => {
         <div className="nav-main-container">
           <div className="logoAndNavLinks">
             <div className="imag">
-              <img src={logo} alt="" className="image" />
+              <img src={logo} alt="" className="imagesss" />
             </div>
             <div className="navLinks">
               <a href="#">Features</a>

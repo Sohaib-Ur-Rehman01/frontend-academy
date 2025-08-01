@@ -6,9 +6,10 @@ export const TestimonialsSection = () => {
       <div className="test-main-container">
         <div className="testimonial-main-container">
           <h2 className="heading">What They're Saying About Us</h2>
+
           <div className="card">
             <div className="testimonials">
-              <img src={quote} alt="" className="image" />
+              <img src={quote} alt="" className="image-quote" />
               <div className="content-profile">
                 <p>
                   I'm truly impressed with the quality of the instructors,
@@ -28,7 +29,7 @@ export const TestimonialsSection = () => {
               </div>
             </div>
             <div className="testimonials">
-              <img src={quote} alt="" className="image" />
+              <img src={quote} alt="" className="image-quote" />
               <div className="content-profile">
                 <p>
                   There isn't another place that has the same quality and is
@@ -44,7 +45,7 @@ export const TestimonialsSection = () => {
           </div>
           <div className="card">
             <div className="testimonials">
-              <img src={quote} alt="" className="image" />
+              <img src={quote} alt="" className="image-quote" />
               <div className="content-profile">
                 <p>
                   TBH I owe my entire career to Frontend Masters, content is
@@ -61,7 +62,7 @@ export const TestimonialsSection = () => {
               </div>
             </div>
             <div className="testimonials">
-              <img src={quote} alt="" className="image" />
+              <img src={quote} alt="" className="image-quote" />
               <div className="content-profile">
                 <p>
                   There isn't another place that has the same quality and is
@@ -79,7 +80,7 @@ export const TestimonialsSection = () => {
           </div>
           <div className="card">
             <div className="testimonials">
-              <img src={quote} alt="" className="image" />
+              <img src={quote} alt="" className="image-quote" />
               <div className="content-profile">
                 <p>
                   TBH I owe my entire career to Frontend Masters, content is
@@ -92,8 +93,8 @@ export const TestimonialsSection = () => {
                 <span>Rita Iglesias Gandara</span>
               </div>
             </div>
-            <div className="testimonials">
-              <img src={quote} alt="" className="image" />
+            <div className="testimonials length-set">
+              <img src={quote} alt="" className="image-quote" />
               <div className="content-profile">
                 <p>
                   Frontend Masters should be in every developers tool kit.{" "}
@@ -107,23 +108,26 @@ export const TestimonialsSection = () => {
               </div>
             </div>
           </div>
+
           <div className="btn">
-            <div>
-              <button className="buttonShow">Show More </button>
-            </div>
-            <div className="arrow">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M18.8571 9.42855C18.8571 9.6607 18.7723 9.86159 18.6026 10.0312l-6 6C12.433 16.2009 12.2321 16.2857 12 16.2857 11.7678 16.2857 11.5669 16.2009 11.3973 16.0312l-6.00001-6C5.22764 9.86159 5.14282 9.6607 5.14282 9.42855 5.14282 9.19641 5.22764 8.99552 5.39729 8.82588 5.56693 8.65623 5.76782 8.57141 5.99997 8.57141H18C18.2321 8.57141 18.433 8.65623 18.6026 8.82588 18.7723 8.99552 18.8571 9.19641 18.8571 9.42855z"
-                  fill="currentcolor"
-                ></path>
-              </svg>
+            <div className="btn-inner">
+              <div className="btn-show-more">
+                <button className="buttonShow">Show More </button>
+              </div>
+              <div className="arrow">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M18.8571 9.42855C18.8571 9.6607 18.7723 9.86159 18.6026 10.0312l-6 6C12.433 16.2009 12.2321 16.2857 12 16.2857 11.7678 16.2857 11.5669 16.2009 11.3973 16.0312l-6.00001-6C5.22764 9.86159 5.14282 9.6607 5.14282 9.42855 5.14282 9.19641 5.22764 8.99552 5.39729 8.82588 5.56693 8.65623 5.76782 8.57141 5.99997 8.57141H18C18.2321 8.57141 18.433 8.65623 18.6026 8.82588 18.7723 8.99552 18.8571 9.19641 18.8571 9.42855z"
+                    fill="currentcolor"
+                  ></path>
+                </svg>
+              </div>
             </div>
           </div>
         </div>
