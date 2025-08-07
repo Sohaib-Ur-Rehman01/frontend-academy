@@ -5,6 +5,7 @@ import quote from "../assets/quote.svg";
 import logo from "../assets/frontendMasterlogo.svg";
 import { CiMenuBurger } from "react-icons/ci";
 import { MdClose } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 // Array of background images (add your own image URLs)
 const bgImages = [
@@ -55,23 +56,25 @@ export const TopSection = () => {
         <div className="res-nav">
           <div className="res-img res-sec-container">
             <div className="res-nav-image">
-              <img src={logo} alt="" className="res-image" />
+              <Link to="/">
+                <img src={logo} alt="" className="res-image" />
+              </Link>
             </div>
             <div className="res-navLinks">
-              <a href="#">Features</a>
+              <Link to="/features">Features</Link>
               <div className="features-dropdown">
-                <a href="#">All Features</a>
-                <a href="#">Learning Paths</a>
-                <a href="#">Interactive Courses</a>
+                <Link to="#">All Features</Link>
+                <Link to="#">Learning Paths</Link>
+                <Link to="#">Interactive Courses</Link>
               </div>
 
-              <a href="#">Learn</a>
-              <a href="#">Courses</a>
-              <a href="#">
+              <Link to="/learn">Learn</Link>
+              <Link to="#">Courses</Link>
+              <Link to="#">
                 Tutorials <span className="top-hero-new">NEW</span>
-              </a>
-              <a href="#">Blog</a>
-              <a href="#">Pricing</a>
+              </Link>
+              <Link to="#">Blog</Link>
+              <Link to="#">Pricing</Link>
             </div>
           </div>
           <div className="loginSignUpSearchBar">
@@ -86,7 +89,9 @@ export const TopSection = () => {
         {/* res-navbar for mobiles and small screen devices start */}
         <div className="small-nav">
           <div className="sm-img">
-            <img src={logo} alt="" className="res-image" />
+            <Link to="/">
+              <img src={logo} alt="" className="res-image" />
+            </Link>{" "}
           </div>
           <div className="searchAndToggleIcon">
             <div className="searchbar">
@@ -100,28 +105,28 @@ export const TopSection = () => {
         </div>
         {isMenuOpen && (
           <div className="mobile-menu">
-            <a href="#">Features</a>
+            <Link to="/features">Features</Link>
             <hr className="divider-menu" />
             <div className="feature-menu">
-              <a href="#">Overview</a>
-              <a href="#">For Teams</a>
-              <a href="#">For Enterprises</a>
+              <Link to="#">Overview</Link>
+              <Link to="#">For Teams</Link>
+              <Link to="#">For Enterprises</Link>
             </div>
-            <a href="#">Learn</a>
-            <a href="#">Courses</a>
-            <a href="#">
+            <Link to="/learn">Learn</Link>
+            <Link to="#">Courses</Link>
+            <Link to="#">
               Tutorials <span className="top-hero-new">NEW</span>
-            </a>
-            <a href="#">Blog</a>
-            <a href="#">Pricing</a>
+            </Link>
+            <Link to="#">Blog</Link>
+            <Link to="#">Pricing</Link>
             <div className="loginSignUpSearchBar">
               <div className="joinNow">Join Now</div>
               <div className="login">Login</div>
               <div className="contact-supp-sm">
                 <span className="con-sm">Contact:</span>
-                <a href="#" className="email">
+                <Link to="#" className="email">
                   support@frontendmasters.com
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -134,20 +139,20 @@ export const TopSection = () => {
               <img src={logo} alt="" className="imagesss" />
             </div>
             <div className="navLinks">
-              <a href="#">Features</a>
+              <Link to="/features">Features</Link>
               <div className="features-dropdown">
-                <a href="#">All Features</a>
-                <a href="#">Learning Paths</a>
-                <a href="#">Interactive Courses</a>
+                <Link to="#">All Features</Link>
+                <Link to="#">Learning Paths</Link>
+                <Link to="#">Interactive Courses</Link>
               </div>
 
-              <a href="#">Learn</a>
-              <a href="#">Courses</a>
-              <a href="#">
+              <Link to="/learn">Learn</Link>
+              <Link to="#">Courses</Link>
+              <Link to="#">
                 Tutorials <span className="top-hero-new">NEW</span>
-              </a>
-              <a href="#">Blog</a>
-              <a href="#">Pricing</a>
+              </Link>
+              <Link to="#">Blog</Link>
+              <Link to="#">Pricing</Link>
             </div>
           </div>
           <div className="loginSignUpSearchBar">
