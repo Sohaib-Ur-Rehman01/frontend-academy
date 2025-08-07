@@ -716,6 +716,13 @@
 }
 .feature-quiz-cont-section {
   margin: 0px 176px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.feature-quiz-cont-section p {
+  color: white;
 }
 .a-and-arr {
   display: flex;

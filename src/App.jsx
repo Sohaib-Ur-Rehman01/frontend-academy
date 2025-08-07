@@ -42,6 +42,7 @@ const Features = () => (
     <ProfileSection />
     <FeatureCompaniesSection />
     <FeatureQuizSection />
+    <FooterSection />
   </>
 );
 
