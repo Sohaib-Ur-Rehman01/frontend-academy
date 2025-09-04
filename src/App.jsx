@@ -17,8 +17,17 @@ import { WorkShopSection } from "./components/featuresSection";
 import { ProfileSection } from "./components/featuresSection";
 import { FeatureCompaniesSection } from "./components/featuresSection";
 import { FeatureQuizSection } from "./components/featuresSection";
-import LearnSection from "./components/learnSection";
+import AccordionComponent from "./components/accordion";
+import Pricinaccordion from "./components/pricingaccordion";
+import { LearnHeroSection } from "./components/learnSection";
+import { LearningPathSection } from "./components/learnSection";
+import { LearningTestimonialSection } from "./components/learnSection";
+import { CourseHeroSection } from "./components/courseSection";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { TutorialsSection } from "./components/tutorialsSection";
+import BlogSectionNavbar from "./components/blogSection";
+import { BlogFooterSection } from "./components/blogfooter";
+import PricingSection from "./components/pricingSection";
 const Home = () => (
   <>
     <TopSection />
@@ -42,10 +51,47 @@ const Features = () => (
     <ProfileSection />
     <FeatureCompaniesSection />
     <FeatureQuizSection />
+    <AccordionComponent />
     <FooterSection />
   </>
 );
-
+const Learn = () => (
+  <>
+    <FeatureSectionNavbar />
+    <LearnHeroSection />
+    <LearningPathSection />
+    <FooterSection />
+    {/* <LearningTestimonialSection /> */}
+  </>
+);
+const Courses = () => (
+  <>
+    <FeatureSectionNavbar />
+    <CourseHeroSection />
+    <FooterSection />
+  </>
+);
+const Tutorials = () => (
+  <>
+    <FeatureSectionNavbar />
+    <TutorialsSection />
+    <FooterSection />
+  </>
+);
+const Blog = () => (
+  <>
+    <BlogSectionNavbar />
+    <BlogFooterSection />
+  </>
+);
+const Pricing = () => (
+  <>
+    <FeatureSectionNavbar />
+    <PricingSection />
+    <Pricinaccordion />
+    <FooterSection />
+  </>
+);
 const router = createBrowserRouter([
   {
     path: "/",
@@ -57,7 +103,23 @@ const router = createBrowserRouter([
   },
   {
     path: "/learn",
-    element: <FeatureSectionNavbar />,
+    element: <Learn />,
+  },
+  {
+    path: "/courses",
+    element: <Courses />,
+  },
+  {
+    path: "/tutorials",
+    element: <Tutorials />,
+  },
+  {
+    path: "/blog",
+    element: <Blog />,
+  },
+  {
+    path: "/pricing",
+    element: <Pricing />,
   },
 ]);
 

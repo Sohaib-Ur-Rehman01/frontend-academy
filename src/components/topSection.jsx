@@ -6,7 +6,7 @@ import logo from "../assets/frontendMasterlogo.svg";
 import { CiMenuBurger } from "react-icons/ci";
 import { MdClose } from "react-icons/md";
 import { Link } from "react-router-dom";
-
+import MobileMenu from "../components/mobilenavbar";
 // Array of background images (add your own image URLs)
 const bgImages = [
   "https://static.frontendmasters.com/assets/fm/med/home/heros/hero-kraman.webp",
@@ -69,12 +69,12 @@ export const TopSection = () => {
               </div>
 
               <Link to="/learn">Learn</Link>
-              <Link to="#">Courses</Link>
-              <Link to="#">
+              <Link to="/courses">Courses</Link>
+              <Link to="/tutorials">
                 Tutorials <span className="top-hero-new">NEW</span>
               </Link>
-              <Link to="#">Blog</Link>
-              <Link to="#">Pricing</Link>
+              <Link to="/blog">Blog</Link>
+              <Link to="/pricing">Pricing</Link>
             </div>
           </div>
           <div className="loginSignUpSearchBar">
@@ -104,32 +104,55 @@ export const TopSection = () => {
           </div>
         </div>
         {isMenuOpen && (
-          <div className="mobile-menu">
-            <Link to="/features">Features</Link>
-            <hr className="divider-menu" />
-            <div className="feature-menu">
-              <Link to="#">Overview</Link>
-              <Link to="#">For Teams</Link>
-              <Link to="#">For Enterprises</Link>
-            </div>
-            <Link to="/learn">Learn</Link>
-            <Link to="#">Courses</Link>
-            <Link to="#">
-              Tutorials <span className="top-hero-new">NEW</span>
-            </Link>
-            <Link to="#">Blog</Link>
-            <Link to="#">Pricing</Link>
-            <div className="loginSignUpSearchBar">
-              <div className="joinNow">Join Now</div>
-              <div className="login">Login</div>
-              <div className="contact-supp-sm">
-                <span className="con-sm">Contact:</span>
-                <Link to="#" className="email">
-                  support@frontendmasters.com
-                </Link>
-              </div>
-            </div>
-          </div>
+          // <div className="mobile-menu">
+          //   <div className="mob-nav-links">
+          //     <div className="feature-div">
+          //       <Link to="/features">Features</Link>
+          //       <hr className="divider-menu-for-sm-devices" />
+          //       <div className="feature-menu">
+          //         <Link to="#">Overview</Link>
+          //         <Link to="#">For Teams</Link>
+          //         <Link to="#">For Enterprises</Link>
+          //       </div>
+          //     </div>
+          //     <Link to="/learn">Learn</Link>
+          //     <Link to="/courses">Courses</Link>
+          //     <Link to="/tutorials">
+          //       Tutorials <span className="top-hero-new">NEW</span>
+          //     </Link>
+          //     <Link to="/blog">Blog</Link>
+          //     <Link to="/pricing">Pricing</Link>
+          //   </div>
+          //   <div className="mob-nav-btn-container">
+          //     <button className="joinNow">Join Now</button>
+          //     <button className="login">Login</button>
+          //     <div className="contact-supp-sm">
+          //       <span className="con-sm">Contact:</span>
+          //       <Link to="#" className="email">
+          //         support@frontendmasters.com
+          //       </Link>
+          //     </div>
+          //   </div>
+          // </div>
+          <MobileMenu
+            navLinks={[
+              { to: "/learn", label: "Learn" },
+              { to: "/courses", label: "Courses" },
+              { to: "/tutorials", label: "Tutorials", isNew: true },
+              { to: "/blog", label: "Blog" },
+              { to: "/pricing", label: "Pricing" },
+            ]}
+            featureLinks={[
+              { to: "#", label: "Overview" },
+              { to: "#", label: "For Teams" },
+              { to: "#", label: "For Enterprises" },
+            ]}
+            buttons={[
+              { label: "Join Now", className: "joinNow" },
+              { label: "Login", className: "login" },
+            ]}
+            contactInfo={{ email: "support@frontendmasters.com" }}
+          />
         )}
 
         {/* res-navbar for mobiles and small screen devices end */}
@@ -147,12 +170,12 @@ export const TopSection = () => {
               </div>
 
               <Link to="/learn">Learn</Link>
-              <Link to="#">Courses</Link>
-              <Link to="#">
+              <Link to="/courses">Courses</Link>
+              <Link to="/tutorials">
                 Tutorials <span className="top-hero-new">NEW</span>
               </Link>
-              <Link to="#">Blog</Link>
-              <Link to="#">Pricing</Link>
+              <Link to="/blog">Blog</Link>
+              <Link to="/pricing">Pricing</Link>
             </div>
           </div>
           <div className="loginSignUpSearchBar">
@@ -170,13 +193,13 @@ export const TopSection = () => {
             <h1>
               Your Path to Senior <br /> Developer and Beyond
             </h1>
-          </div>
-          <div className="hero-buttons">
-            <div className="btnforfreeTrial">
-              <button>Start a Free 5-day Trial</button>
-            </div>
-            <div className="btnforBrowseCourses">
-              <button>Browse Our Courses</button>
+            <div className="hero-buttons">
+              <div className="btnforfreeTrial">
+                <button>Start a Free 5-day Trial</button>
+              </div>
+              <div className="btnforBrowseCourses">
+                <button>Browse Our Courses</button>
+              </div>
             </div>
           </div>
         </div>
@@ -198,6 +221,15 @@ export const TopSection = () => {
           </div>
         </div>
       </header>
+      <div className="banner-current-opportunity">
+        <p>
+          <strong>
+            Join Us live online!
+            <a href="#">API Design in Node.js</a>
+          </strong>
+          on August 13,2025
+        </p>
+      </div>
     </div>
   );
 };

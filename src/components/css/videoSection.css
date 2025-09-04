@@ -32,6 +32,8 @@
 
 .headingContent {
   font-size: 2.5rem;
+  color: #ddd;
+  font-weight: 700;
 }
 
 .hero-description {
@@ -61,13 +63,14 @@
   background-color: #c95018;
 }
 
-.videosectionbtn:hover,
 .learningpathbtn:hover {
-  background-color: #c53030;
-  transform: scale(1.05);
+  background-color: #e87039;
 }
 .videosectionbtn {
   background-color: #c42f2f;
+}
+.videosectionbtn:hover {
+  background-color: #e24141d8;
 }
 
 .video-section {

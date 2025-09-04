@@ -9,8 +9,8 @@ export const TestimonialsSection = () => {
 
           <div className="card">
             <div className="testimonials">
-              <img src={quote} alt="" className="image-quote" />
               <div className="content-profile">
+                <img src={quote} alt="" id="image-quoteee" />
                 <p>
                   I'm truly impressed with the quality of the instructors,
                   top-notch! Also, the casual tone of the course is great
@@ -25,11 +25,14 @@ export const TestimonialsSection = () => {
                   src="https://cdn.senja.io/public/media/0fc42059-4a14-45b9-979a-3a7f540d9057_fc777113-0f99-48f0-ad71-301e75fe4b56_1684278076786.jpeg"
                   alt="Rita Iglesias Gandara"
                 />
-                <span>Rita Iglesias Gandara</span>
+                <div className="profile-img-name-nickname">
+                  <span className="prof-name">Rita Iglesias Gandara</span>
+                  {/* <span>Robert Borghesi</span> */}
+                </div>
               </div>
             </div>
             <div className="testimonials">
-              <img src={quote} alt="" className="image-quote" />
+              <img src={quote} alt="" id="image-quoteee" />
               <div className="content-profile">
                 <p>
                   There isn't another place that has the same quality and is
@@ -38,14 +41,16 @@ export const TestimonialsSection = () => {
               </div>
               <div className="profile">
                 <img src="https://cdn.senja.io/public/media/95a01823-99b4-41c7-ab4c-0412ecb1c696_dcbae3c9-f148-4abf-88d2-b8e5247dbf18_7maAfFeI_400x400.jpg" />
-                <span>Rita Iglesias Gandara</span>
-                <p style={{ color: "white", fontSize: "42px" }}></p>
+                <div className="profile-img-name-nickname">
+                  <span className="prof-name">Fauzaan</span>
+                  <span>fauzaanu</span>
+                </div>
               </div>
             </div>
           </div>
           <div className="card">
             <div className="testimonials">
-              <img src={quote} alt="" className="image-quote" />
+              <img src={quote} alt="" id="image-quoteee" />
               <div className="content-profile">
                 <p>
                   TBH I owe my entire career to Frontend Masters, content is
@@ -55,32 +60,42 @@ export const TestimonialsSection = () => {
               </div>
               <div className="profile">
                 <img
-                  src="https://pbs.twimg.com/profile_images/1595794032457826305/t1iSVoIf.jpg"
+                  src="https://cdn.senja.io/public/media/a0eee5fa-9b19-47bb-81ba-28ecd69b8a36_09c272cc-18d6-44ae-a7b2-f9e3b04c815d_yXkTes0n_400x400.jpg"
                   alt="Robert Borghesi"
                 />
-                <span>Robert Borghesi</span>
+                <div className="profile-img-name-nickname">
+                  <span className="prof-name">Olvine George</span>
+                  <span>GeorgeOlivine</span>
+                </div>
               </div>
             </div>
             <div className="testimonials">
-              <img src={quote} alt="" className="image-quote" />
+              <img src={quote} alt="" id="image-quoteee" />
               <div className="content-profile">
                 <p>
-                  There isn't another place that has the same quality and is
-                  consistent in quality across all courses as Frontend Masters.
+                  I have been promoted to a Senior Frontend Developer!
+                  <br />
+                  <br />
+                  It would be wrong to not shout out Frontend Masters, the
+                  coursework there increased my skills a lot more than I
+                  initially thought, I can’t recommend it enough.
                 </p>
               </div>
               <div className="profile">
                 <img
-                  src="https://randomuser.me/api/portraits/men/34.jpg"
+                  src="https://cdn.senja.io/public/media/KTFzX0tes0n6MTlR1uJTD2no.jpeg"
                   alt="Faurzan"
                 />
-                <span>Faurzan</span>
+                <div className="profile-img-name-nickname">
+                  <span className="prof-name">Adomas Liutkus</span>
+                  <span>Senior Front-End Developer @ NordLayer</span>
+                </div>
               </div>
             </div>
           </div>
           <div className="card">
             <div className="testimonials">
-              <img src={quote} alt="" className="image-quote" />
+              <img src={quote} alt="" id="image-quoteee" />
               <div className="content-profile">
                 <p>
                   TBH I owe my entire career to Frontend Masters, content is
@@ -90,11 +105,14 @@ export const TestimonialsSection = () => {
               </div>
               <div className="profile">
                 <img src="https://pbs.twimg.com/profile_images/1595794032457826305/t1iSVoIf.jpg" />
-                <span>Rita Iglesias Gandara</span>
+                <div className="profile-img-name-nickname">
+                  <span className="prof-name">Robert Borghesi</span>
+                  <span>dghez_</span>
+                </div>
               </div>
             </div>
             <div className="testimonials length-set">
-              <img src={quote} alt="" className="image-quote" />
+              <img src={quote} alt="" id="image-quoteee" />
               <div className="content-profile">
                 <p>
                   Frontend Masters should be in every developers tool kit.{" "}
@@ -104,12 +122,15 @@ export const TestimonialsSection = () => {
               </div>
               <div className="profile">
                 <img src="https://cdn.senja.io/public/media/874c87ef-71df-4b7b-8bfe-b6cc7a9bd325_268be879-ff6d-4f01-bcf9-ac1d3b09b371_9xzR7uvQ_400x400.jpg" />
-                <span>Rita Iglesias Gandara</span>
+                <div className="profile-img-name-nickname">
+                  <span className="prof-name">Will Thomson</span>
+                  <span>willthomson__</span>
+                </div>{" "}
               </div>
             </div>
           </div>
 
-          <div className="btn">
+          <div className="show-more-btn">
             <div className="btn-inner">
               <div className="btn-show-more">
                 <button className="buttonShow">Show More </button>

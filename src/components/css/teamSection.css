@@ -15,13 +15,20 @@
   color: #fff;
   font-size: 24px;
   font-weight: 700;
-  margin-bottom: 10px;
+  margin: 12px 0px;
 }
 
 .team-note {
   color: #cfcfcf;
   font-size: 1.1rem;
+  /* margin-bottom: 28px; */
+}
+.team-note-child-p {
+  color: #cfcfcf;
+  font-size: 1.1rem;
   margin-bottom: 28px;
+  margin: 12px 0px;
+  /* border: 1px solid lime; */
 }
 
 .team-btn {
@@ -41,25 +48,33 @@
 }
 
 .team-testimonials-wall {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
   gap: 32px;
+  justify-content: center;
   max-width: 1200px;
   margin: 0 auto;
 }
 
 .team-testimonial-card {
+  flex: 1 1 340px; /* Growable, shrinkable, but starts at 340px */
   background: #181818;
   color: #fff;
   border-radius: 12px;
-  padding: 28px 24px 20px 24px;
+  padding: 24px;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  min-height: 220px;
+  height: 100%;
+  /* width: 100%; */
+  /* min-height: 250px; */
+  max-width: 100%;
 }
-
+#quote-img {
+  border: 1px solid lime;
+  width: 100px;
+}
 .team-testimonial-card blockquote {
   font-size: 1.08rem;
   margin-bottom: 22px;
@@ -67,17 +82,8 @@
   position: relative;
   text-align: left;
   color: #fff;
-}
-.team-testimonial-card-sara {
-  background: #181818;
-  color: #fff;
-  border-radius: 12px;
-  padding: 28px 24px 20px 24px;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  min-height: 220px;
+  padding: 36px 0px 0px;
+  white-space: pre-line;
 }
 
 .team-quote-icon {
@@ -90,7 +96,7 @@
   display: flex;
   align-items: center;
   gap: 14px;
-  margin-top: auto;
+  /* margin-top: auto; */
 }
 
 .team-testimonial-user img {
@@ -117,10 +123,6 @@
 
 /* Add to teamSection.css */
 @media (max-width: 1200px) {
-  .team-testimonials-wall {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    padding: 60px 40px 0px;
-  }
 }
 
 @media (max-width: 768px) {
@@ -131,7 +133,36 @@
     font-size: 20px;
   }
   .team-testimonials-wall {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    gap: 32px;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .team-testimonial-card {
+    flex: 1 1 340px;
+    background: #181818;
+    color: #fff;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+    min-height: 220px;
+  }
+
+  .team-testimonial-card {
+    max-width: 100%;
+    flex: 1 1 100%;
+    border: 1px solid lime;
+  }
+  .team-btn {
+    width: 100%;
   }
 }
 

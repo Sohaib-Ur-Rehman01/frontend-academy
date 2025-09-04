@@ -35,24 +35,24 @@ export const FooterSection = () => {
             <div className="social-apps-icons">
               <div className="icons">
                 <div>
-                  <img src={instagramLogo} alt="" />
+                  <img src={instagramLogo} alt="" className="footicon" />
                 </div>
                 <div>
-                  <img src={x} alt="" />
+                  <img src={x} alt="" className="footicon" />
                 </div>
                 <div>
-                  <img src={linkdin} alt="" />
+                  <img src={linkdin} alt="" className="footicon" />
                 </div>
                 <div>
-                  <img src={facebook} alt="" />
+                  <img src={facebook} alt="" className="footicon" />
                 </div>
               </div>
               <div className="googleAndAppStore">
                 <div className="appstore">
-                  <img src={appleStoreLogo} alt="" />
+                  <img src={appleStoreLogo} alt="" className="footicon" />
                 </div>
                 <div className="googlestore">
-                  <img src={googlePlayStoreLogo} alt="" />
+                  <img src={googlePlayStoreLogo} alt="" className="footicon" />
                 </div>
               </div>
               <div className="contact">
@@ -69,7 +69,8 @@ export const FooterSection = () => {
               Frontend Masters is proudly made in Minneapolis, MN
             </div>
             <div className="minneapolis">
-              © 2025 Frontend Masters .<a href="#">Terms of service</a>.{" "}
+              © 2025 Frontend Masters <p>.</p>
+              <a href="#">Terms of service</a> <p>.</p>{" "}
               <a href="#">Privacy Policy</a>
             </div>
           </div>
@@ -128,8 +129,9 @@ export const FooterSection = () => {
               Frontend Masters is proudly made in Minneapolis, MN
             </div>
             <div className="minneapolis">
-              © 2025 Frontend Masters .<a href="#">Terms of service</a>.{" "}
-              <a href="#">Privacy Policy</a>
+              © 2025 Frontend Masters <span>.</span>
+              <a href="#"> Terms of service</a>
+              <span>.</span> <a href="#">Privacy Policy</a>
             </div>
           </div>
         </div>
