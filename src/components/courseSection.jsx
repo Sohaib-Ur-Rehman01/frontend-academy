@@ -296,7 +296,7 @@ Search for a course, language, framework, or teacher..."
                   }}
                 />
               )}
-              />
+
               <div className="tutorial-head-line">
                 <strong>All Topics</strong>
               </div>

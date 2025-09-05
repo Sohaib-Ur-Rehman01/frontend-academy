@@ -39,6 +39,7 @@
   object-fit: cover;
   margin-left: -15px;
   /* transition: transform 0.3s ease; */
+  cursor: pointer;
 }
 
 .multi-images:first-child {
@@ -181,6 +182,7 @@
 .stars {
   display: flex;
   gap: 10px;
+  cursor: pointer;
 }
 .star-content p {
   color: #ccc;
@@ -447,6 +449,12 @@ ul {
   font-size: 14px;
   margin: 14px 0px;
 }
+.card img {
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+  border: none;
+}
 @media (min-width: 1020px) and (max-width: 1160px) {
   .pricing-cards-main-container {
     /* background-color: #ff0d05; */
@@ -463,7 +471,7 @@ ul {
     /* flex: 1 1 100%; */
   }
   .one {
-    width: 1500px;
+    /* width: 1500px; */
     flex: 1 1 65%; /* Adjust this percentage as needed */
     max-width: 65%;
   }
@@ -493,6 +501,8 @@ ul {
     flex-direction: column;
     justify-content: center;
     /* flex: 1 1 100%; */
+    border: 1px solid lime;
+    width: 100vw;
   }
 
   .team-card {
@@ -515,19 +525,32 @@ ul {
     width: 300px;
     max-width: 300px;
   }
+  .one {
+    width: 300px;
+    max-width: 300px;
+  }
   .three {
     /* border: 1px solid lime; */
-    width: 400px;
-    max-width: 400px;
+    width: 300px;
+    max-width: 300px;
   }
   .two {
     border: none;
+    width: 300px;
+    max-width: 300px;
   }
-}
-.card img {
-  /* border: 1px solid lime; */
-  width: 50px;
-  height: 50px;
-  border-radius: 100px;
-  border: none;
+  .multiple-images-and-star-main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .stars {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    cursor: pointer;
+    /* border: 1px solid lime; */
+  }
 }

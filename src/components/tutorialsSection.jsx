@@ -1,4 +1,6 @@
 import React from "react";
+import { useState } from "react";
+
 import CategorySlider from "./slidersmallcard";
 import CategoryMediumSliderSection from "./categorymediumslidersection.jsx";
 import { FiSearch } from "react-icons/fi";
@@ -6,212 +8,38 @@ import "../components/css/tutorialSection.css";
 import TutorialMediumSliderSection from "./tutorialmediumslider.jsx";
 import csscardimage from "../assets/css-card.webp";
 export const TutorialsSection = () => {
+  const [selectedCategory, setSelectedCategory] = useState(null);
   const tutorialCourses = [
     {
-      title: "Css style queries have so much potential",
+      title: "React",
       message: "By",
       name: "Web Dev Simplified",
       bgImage:
         "https://cdn.frontendmasters.com/assets/tutorials/webdevsimplified/style-queries/thumb-270.webp",
     },
     {
-      title: "Css style queries have so much potential",
+      title: "Node js",
       message: "By",
       name: "Web Dev Simplified",
       bgImage:
         "https://cdn.frontendmasters.com/assets/tutorials/webdevsimplified/style-queries/thumb-270.webp",
     },
     {
-      title: "Css style queries have so much potential",
+      title: "Javascript",
       message: "By",
       name: "Web Dev Simplified",
       bgImage:
         "https://cdn.frontendmasters.com/assets/tutorials/webdevsimplified/style-queries/thumb-270.webp",
     },
     {
-      title: "Css style queries have so much potential",
+      title: "Frameworks",
       message: "By",
       name: "Web Dev Simplified",
       bgImage:
         "https://cdn.frontendmasters.com/assets/tutorials/webdevsimplified/style-queries/thumb-270.webp",
     },
     {
-      title: "Css style queries have so much potential",
-      message: "By",
-      name: "Web Dev Simplified",
-      bgImage:
-        "https://cdn.frontendmasters.com/assets/tutorials/webdevsimplified/style-queries/thumb-270.webp",
-    },
-    {
-      title: "Css style queries have so much potential",
-      message: "By",
-      name: "Web Dev Simplified",
-      bgImage:
-        "https://cdn.frontendmasters.com/assets/tutorials/webdevsimplified/style-queries/thumb-270.webp",
-    },
-    {
-      title: "Css style queries have so much potential",
-      message: "By",
-      name: "Web Dev Simplified",
-      bgImage:
-        "https://cdn.frontendmasters.com/assets/tutorials/webdevsimplified/style-queries/thumb-270.webp",
-    },
-    {
-      title: "Css style queries have so much potential",
-      message: "By",
-      name: "Web Dev Simplified",
-      bgImage:
-        "https://cdn.frontendmasters.com/assets/tutorials/webdevsimplified/style-queries/thumb-270.webp",
-    },
-    {
-      title: "Css style queries have so much potential",
-      message: "By",
-      name: "Web Dev Simplified",
-      bgImage:
-        "https://cdn.frontendmasters.com/assets/tutorials/webdevsimplified/style-queries/thumb-270.webp",
-    },
-    {
-      title: "Css style queries have so much potential",
-      message: "By",
-      name: "Web Dev Simplified",
-      bgImage:
-        "https://cdn.frontendmasters.com/assets/tutorials/webdevsimplified/style-queries/thumb-270.webp",
-    },
-    {
-      title: "Css style queries have so much potential",
-      message: "By",
-      name: "Web Dev Simplified",
-      bgImage:
-        "https://cdn.frontendmasters.com/assets/tutorials/webdevsimplified/style-queries/thumb-270.webp",
-    },
-    {
-      title: "Css style queries have so much potential",
-      message: "By",
-      name: "Web Dev Simplified",
-      bgImage:
-        "https://cdn.frontendmasters.com/assets/tutorials/webdevsimplified/style-queries/thumb-270.webp",
-    },
-    {
-      title: "Css style queries have so much potential",
-      message: "By",
-      name: "Web Dev Simplified",
-      bgImage:
-        "https://cdn.frontendmasters.com/assets/tutorials/webdevsimplified/style-queries/thumb-270.webp",
-    },
-    {
-      title: "Css style queries have so much potential",
-      message: "By",
-      name: "Web Dev Simplified",
-      bgImage:
-        "https://cdn.frontendmasters.com/assets/tutorials/webdevsimplified/style-queries/thumb-270.webp",
-    },
-    {
-      title: "Css style queries have so much potential",
-      message: "By",
-      name: "Web Dev Simplified",
-      bgImage:
-        "https://cdn.frontendmasters.com/assets/tutorials/webdevsimplified/style-queries/thumb-270.webp",
-    },
-    {
-      title: "Css style queries have so much potential",
-      message: "By",
-      name: "Web Dev Simplified",
-      bgImage:
-        "https://cdn.frontendmasters.com/assets/tutorials/webdevsimplified/style-queries/thumb-270.webp",
-    },
-    {
-      title: "Css style queries have so much potential",
-      message: "By",
-      name: "Web Dev Simplified",
-      bgImage:
-        "https://cdn.frontendmasters.com/assets/tutorials/webdevsimplified/style-queries/thumb-270.webp",
-    },
-    {
-      title: "Css style queries have so much potential",
-      message: "By",
-      name: "Web Dev Simplified",
-      bgImage:
-        "https://cdn.frontendmasters.com/assets/tutorials/webdevsimplified/style-queries/thumb-270.webp",
-    },
-    {
-      title: "Css style queries have so much potential",
-      message: "By",
-      name: "Web Dev Simplified",
-      bgImage:
-        "https://cdn.frontendmasters.com/assets/tutorials/webdevsimplified/style-queries/thumb-270.webp",
-    },
-    {
-      title: "Css style queries have so much potential",
-      message: "By",
-      name: "Web Dev Simplified",
-      bgImage:
-        "https://cdn.frontendmasters.com/assets/tutorials/webdevsimplified/style-queries/thumb-270.webp",
-    },
-    {
-      title: "Css style queries have so much potential",
-      message: "By",
-      name: "Web Dev Simplified",
-      bgImage:
-        "https://cdn.frontendmasters.com/assets/tutorials/webdevsimplified/style-queries/thumb-270.webp",
-    },
-    {
-      title: "Css style queries have so much potential",
-      message: "By",
-      name: "Web Dev Simplified",
-      bgImage:
-        "https://cdn.frontendmasters.com/assets/tutorials/webdevsimplified/style-queries/thumb-270.webp",
-    },
-    {
-      title: "Css style queries have so much potential",
-      message: "By",
-      name: "Web Dev Simplified",
-      bgImage:
-        "https://cdn.frontendmasters.com/assets/tutorials/webdevsimplified/style-queries/thumb-270.webp",
-    },
-    {
-      title: "Css style queries have so much potential",
-      message: "By",
-      name: "Web Dev Simplified",
-      bgImage:
-        "https://cdn.frontendmasters.com/assets/tutorials/webdevsimplified/style-queries/thumb-270.webp",
-    },
-    {
-      title: "Css style queries have so much potential",
-      message: "By",
-      name: "Web Dev Simplified",
-      bgImage:
-        "https://cdn.frontendmasters.com/assets/tutorials/webdevsimplified/style-queries/thumb-270.webp",
-    },
-    {
-      title: "Css style queries have so much potential",
-      message: "By",
-      name: "Web Dev Simplified",
-      bgImage:
-        "https://cdn.frontendmasters.com/assets/tutorials/webdevsimplified/style-queries/thumb-270.webp",
-    },
-    {
-      title: "Css style queries have so much potential",
-      message: "By",
-      name: "Web Dev Simplified",
-      bgImage:
-        "https://cdn.frontendmasters.com/assets/tutorials/webdevsimplified/style-queries/thumb-270.webp",
-    },
-    {
-      title: "Css style queries have so much potential",
-      message: "By",
-      name: "Web Dev Simplified",
-      bgImage:
-        "https://cdn.frontendmasters.com/assets/tutorials/webdevsimplified/style-queries/thumb-270.webp",
-    },
-    {
-      title: "Css style queries have so much potential",
-      message: "By",
-      name: "Web Dev Simplified",
-      bgImage:
-        "https://cdn.frontendmasters.com/assets/tutorials/webdevsimplified/style-queries/thumb-270.webp",
-    },
-    {
-      title: "Css style queries have so much potential",
+      title: "Css style queries have so much potential Full Stack",
       message: "By",
       name: "Web Dev Simplified",
       bgImage:
@@ -342,6 +170,18 @@ export const TutorialsSection = () => {
       img: "https://static.frontendmasters.com/assets/fm/med/topics/frameworks.svg",
     },
   ];
+  // ✅ Filter courses by selectedCategory
+  const filterCourses = (courses, selectedCategory) => {
+    if (!selectedCategory) return courses;
+    return courses.filter(
+      (course) =>
+        course.title.toLowerCase() === selectedCategory.name.toLowerCase()
+    );
+  };
+
+  const filteredTutorials = filterCourses(tutorialCourses, selectedCategory);
+  const dfd = filterCourses(tutorialCourses, selectedCategory);
+
   return (
     <>
       <section id="tutorial-section">
@@ -419,7 +259,29 @@ export const TutorialsSection = () => {
             />
           </div>
           <div className="mini-card-slider">
-            <CategorySlider />
+            <CategorySlider
+              selectedCategory={selectedCategory}
+              onCategorySelect={setSelectedCategory}
+            />
+            {/* ✅ Selected Category Tag */}
+            {selectedCategory && (
+              <div className="selected-category-tag">
+                <img
+                  src={selectedCategory.img}
+                  alt={selectedCategory.name}
+                  className="selected-category-img"
+                />
+                <span className="selected-category">
+                  {selectedCategory.name}
+                </span>
+                <button
+                  id="close-btn"
+                  onClick={() => setSelectedCategory(null)}
+                >
+                  ✕
+                </button>
+              </div>
+            )}
           </div>
           <div className="feature-article-card-container">
             <div className="article-image-container">
@@ -504,7 +366,7 @@ export const TutorialsSection = () => {
               onViewMore={() => console.log("View More Clicked")}
               viewMoreText="View More"
               SliderComponent={TutorialMediumSliderSection}
-              sliderProps={{ courses: tutorialCourses }}
+              sliderProps={{ courses: filteredTutorials }}
             />
             <CategoryMediumSliderSection
               icon={
@@ -528,8 +390,54 @@ export const TutorialsSection = () => {
               onViewMore={() => console.log("View More Clicked")}
               viewMoreText="View More"
               SliderComponent={TutorialMediumSliderSection}
-              sliderProps={{ courses: tutorialCourses }}
+              sliderProps={{ courses: filteredTutorials }}
             />
+            {selectedCategory ? (
+              filteredTutorials.length > 0 ? (
+                <CategoryMediumSliderSection
+                  icon={
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      {/* ... icon path ... */}
+                    </svg>
+                  }
+                  title="Popular"
+                  onViewMore={() => console.log("View More Clicked")}
+                  viewMoreText="View More"
+                  SliderComponent={TutorialMediumSliderSection}
+                  sliderProps={{ courses: filteredTutorials }}
+                />
+              ) : (
+                <p className="no-courses-msg">
+                  No search results found for "{selectedCategory.name}" in
+                  Tutorials
+                </p>
+              )
+            ) : (
+              <CategoryMediumSliderSection
+                icon={
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    {/* ... icon path ... */}
+                  </svg>
+                }
+                title="Popular"
+                onViewMore={() => console.log("View More Clicked")}
+                viewMoreText="View More"
+                SliderComponent={TutorialMediumSliderSection}
+                sliderProps={{ courses: filteredTutorials }}
+              />
+            )}
             {/* small cards */}
             <div className="tutorial-head-line">
               <strong>All Topics</strong>
